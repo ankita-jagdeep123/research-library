@@ -38,7 +38,7 @@ Either name is fine for the bot sync routine; keep the `PDFs/Digestion/...` subt
 | OneDrive | Repo |
 |---|---|
 | `…/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-paira-mall-catalogue.pdf` | `PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-paira-mall-catalogue.pdf` |
-| `…/PDFs/Digestion/Indian Medical Knowledge/Method notes/method-url-to-pdf-stamp.pdf` | `PDFs/Digestion/Indian Medical Knowledge/Method notes/method-url-to-pdf-stamp.pdf` |
+| `…/PDFs/Digestion/Indian Medical Knowledge/Plants & remedies/pubmed-2007-milestones-reserpine.pdf` | `PDFs/Digestion/Indian Medical Knowledge/Plants & remedies/pubmed-2007-milestones-reserpine.pdf` |
 
 ## Sync flow
 

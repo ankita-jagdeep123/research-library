@@ -80,7 +80,7 @@ Live site: https://ankita-jagdeep123.github.io/research-library/
 
 1. Confirm it belongs under **Digestion → Indian Medical Knowledge** (or note a future topic).  
 2. Pick **one uniform type** from the six filter types above.  
-3. Get a durable PDF (public URL or stamped local PDF — next section).  
+3. Get a durable PDF (the real PDF, or a print of the real page — next section).  
 4. Optional: add a Wayback URL if the live page may vanish or paywall.  
 5. Edit `library.json` — add under `sources`:
    - `id`, `title`, `author`, `year`
@@ -98,22 +98,11 @@ Edit `hierarchy.topics` in `library.json`: set `status` to `"active"` and add so
 
 ---
 
-## 5. Turn a URL into a stamped PDF (page 1 provenance)
+## 5. Save a web page as a PDF
 
-### Manual
-
-1. Open the page → **Print → Save as PDF**.  
-2. Optional one-page cover: Original URL · Archived date · Title.  
-3. Save under the right type folder; point `pdfUrl` at it; set `originalUrl`.
-
-### What “good” looks like
-
-- Page 1 always shows provenance.  
-- Page 2+ = short fair-use extract, not a pirate full-text dump.
-
-### Later automation
-
-Scripts (reportlab / weasyprint) can stamp page 1; keep human review for copyright.
+1. Open the original page → **Print → Save as PDF** (the real page, not a summary). If it is paywalled or gone, print the Wayback Machine snapshot and say so in the note.
+2. Save under the right type folder; set `originalUrl` to the page.
+3. Never use generated summary/"stamp" PDFs. If no real page can be printed, leave `pdfUrl` empty — the site then hides **Open PDF**.
 
 ---
 
@@ -140,7 +129,7 @@ Private PDFs: keep them on OneDrive and paste view links into `pdfUrl` via the i
 
 ## 8. Copyright caution
 
-Host only what you own, public domain, or clearly licensed. Prefer linking IA / BHL / publisher PDFs when stable and legal. Stamped catalogue summaries are research aids, not licensed full texts.
+Host only what you own, public domain, or clearly licensed. Prefer linking IA / BHL / publisher PDFs when stable and legal. Never publish generated summaries in place of the real page.
 
 ---
 
@@ -183,7 +172,7 @@ Documents/Research Library/PDFs/Digestion/Indian Medical Knowledge/<Category>/fi
 - **OneDrive** — working store for research PDFs (especially private).  
 - **GitHub** — catalog UI (`index.html` + `library.json`) + public/sample PDFs under `PDFs/`.  
 - Private files you must not publish: keep on OneDrive and paste *Anyone with the link → Can view* into `pdfUrl` via **Add source**.  
-- Public / stampable samples: drop into mirrored folders → sync → auto-tags.
+- Public PDFs and page prints: drop into mirrored folders → sync → auto-tags.
 
 
 ## 12. Topic descriptions (where they live)

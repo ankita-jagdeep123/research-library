@@ -29,8 +29,8 @@ Repo: https://github.com/ankita-jagdeep123/research-library
 |---|---|
 | `index.html` | Static UI (hierarchy + search + type chips + cards). Works offline / `file://` via embedded fallback. |
 | `library.json` | Catalog: hierarchy, filter types, sources. Live Pages always loads this file. |
-| `PDFs/` | Local stamped archive PDFs for demo / sample Open PDF. |
-| `HOW-TO.md` | How to stamp a URL, OneDrive layout, share with your boss. |
+| `PDFs/` | PDFs (real documents or prints of the real web page). |
+| `HOW-TO.md` | How to save a page as PDF, OneDrive layout, share with your boss. |
 | `docs/ADD-SOURCE.md` | Add a source via GitHub Issue form (no hand-editing HTML). |
 | `.github/ISSUE_TEMPLATE/add_source.yml` | Issue form fields for new sources. |
 | `.github/workflows/ingest-source.yml` | Action that appends to `library.json` and commits. |
@@ -65,7 +65,7 @@ Put a PDF under `PDFs/Digestion/<Topic>/<Category>/` (matching OneDrive layout).
 
 - **12 sample sources** remapped under Indian Medical Knowledge into the six uniform types (Plants & remedies is ready as a chip; no demo row mapped there yet).
 - **Real public PDFs** where possible (Current Science, Internet Archive, BHL hub).
-- **Local stamped PDFs** under `PDFs/`.
+- **PDFs** under `PDFs/` (real documents / page prints).
 
 ## Quick start for your boss
 

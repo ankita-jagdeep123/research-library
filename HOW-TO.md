@@ -218,3 +218,11 @@ Tags: 3–6 meaningful subject keywords (people, places, plants, institutions, c
 **Volume order is automatic.** Name multi-volume PDFs with `vol N` (e.g. `hortus-indicus-malabaricus-vol-03-....pdf`). `auto_catalog.py` sets `seriesId` + `sequence` from the filename; AI enrichment never changes them, and the site keeps the volumes together in numeric order. Nothing to manage by hand.
 
 **OneDrive links must be "Anyone with the link → Can view"** (they look like `https://1drv.ms/b/c/.../IQ...?e=xxxx`). Links without `?e=` require Microsoft sign-in; the site will not use them (kept as `onedriveOwnerLink`) and Open PDF falls back to the repo/Wellcome copy.
+
+## 13. Editor buttons (Add source / Sync now)
+
+The public site hides **Add source** and **Sync now**. Open the editor link once:
+
+https://ankita-jagdeep123.github.io/research-library/?edit=1
+
+The browser remembers it (localStorage). To hide them again on that browser: `?edit=0`. Viewers using the normal link never see the buttons. (This only hides buttons; adding sources still requires GitHub access.)

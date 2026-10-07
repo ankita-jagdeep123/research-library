@@ -189,6 +189,8 @@
     white-space: nowrap;
   }
   .btn-add:hover { background: var(--badge-bg); }
+  .editor-only { display: none !important; }
+  body.editor .editor-only { display: inline-flex !important; }
 </style>
 </head>
 <body>
@@ -250,11 +252,11 @@
             </div>
             <div class="toolbar-actions">
               <div class="result-meta" id="resultMeta"></div>
-              <a class="btn btn-secondary" id="syncNowBtn"
+              <a class="btn btn-secondary editor-only" id="syncNowBtn"
                  href="https://github.com/ankita-jagdeep123/research-library/actions/workflows/sync-catalog.yml"
                  target="_blank" rel="noopener noreferrer"
                  title="Click “Run workflow” on GitHub to refresh the catalog immediately (and pull newly pushed PDFs).">Sync now</a>
-              <a class="btn btn-add" id="addSourceBtn"
+              <a class="btn btn-add editor-only" id="addSourceBtn"
                  href="https://github.com/ankita-jagdeep123/research-library/issues/new?template=add_source.yml"
                  target="_blank" rel="noopener noreferrer"
                  title="Opens GitHub Issue form — Action appends to library.json">Add source</a>
@@ -547,5 +549,15 @@
       .catch(() => boot(window.LIBRARY_FALLBACK, "embedded fallback"));
   })();
   </script>
+<script>
+  (function () {
+    var p = new URLSearchParams(location.search).get("edit");
+    try {
+      if (p === "1") localStorage.setItem("rlEditor", "1");
+      if (p === "0") localStorage.removeItem("rlEditor");
+      if (p === "1" || localStorage.getItem("rlEditor") === "1") document.body.classList.add("editor");
+    } catch (e) { if (p === "1") document.body.classList.add("editor"); }
+  })();
+</script>
 </body>
 </html>

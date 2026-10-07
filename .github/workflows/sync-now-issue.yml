@@ -1,0 +1,100 @@
+name: Sync catalog from Sync-now issue
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  sync:
+    if: >
+      (github.event.action == 'opened' &&
+        (contains(join(github.event.issue.labels.*.name, ','), 'sync-now') ||
+         startsWith(github.event.issue.title, '[Sync]'))) ||
+      (github.event.action == 'labeled' && github.event.label.name == 'sync-now')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install poppler (pdftotext for AI tagging)
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+
+      - name: Auto-catalog PDFs into library.json
+        id: catalog
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+        run: |
+          set -o pipefail
+          python3 scripts/auto_catalog.py --ai 2>&1 | tee catalog.log
+          # Capture last "added N, skipped M" line for the issue comment
+          summary=$(grep -E '^added [0-9]+, skipped [0-9]+' catalog.log | tail -1 || true)
+          echo "summary=${summary:-added 0, skipped 0}" >> "$GITHUB_OUTPUT"
+
+      - name: Commit library.json if changed
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add library.json
+          if git diff --staged --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No library.json changes"
+            exit 0
+          fi
+          git commit -m "Auto-catalog: sync from issue #${{ github.event.issue.number }}"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Comment and close issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const summary = `${{ steps.catalog.outputs.summary }}` || 'catalog finished';
+            const changed = `${{ steps.commit.outputs.changed }}` === 'true';
+            const pages = 'https://ankita-jagdeep123.github.io/research-library/';
+            const body = changed
+              ? [
+                  `✅ Sync complete: \`${summary}\`.`,
+                  ``,
+                  `Committed updated \`library.json\` to \`main\`. Pages will refresh shortly: ${pages}`,
+                ].join('\n')
+              : [
+                  `✅ Sync complete: \`${summary}\`.`,
+                  ``,
+                  `No \`library.json\` changes (catalog already up to date).`,
+                ].join('\n');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body,
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed',
+            });
+
+      - name: Comment on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: '❌ Sync failed. Check the workflow log for `scripts/auto_catalog.py`.',
+            });

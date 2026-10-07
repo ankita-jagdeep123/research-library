@@ -26,8 +26,15 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install poppler (pdftotext for AI tagging)
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+
       - name: Auto-catalog PDFs into library.json
-        run: python3 scripts/auto_catalog.py
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+        run: python3 scripts/auto_catalog.py --ai
 
       - name: Commit library.json if changed
         run: |

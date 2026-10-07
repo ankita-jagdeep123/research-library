@@ -1,0 +1,13 @@
+name: Sync now
+description: Trigger auto-catalog to refresh library.json from PDFs/ (and pick up newly pushed files).
+title: "[Sync] Refresh catalog"
+labels: ["sync-now"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Opening this issue triggers **auto-catalog**: the Action walks `PDFs/`, updates `library.json` if anything is new, comments with the result, and closes the issue.
+
+        **OneDrive-only new files** (not yet on GitHub): the weekday ~7am bot sync also copies them into the repo, or message **Ankita's Bot** “sync now”.
+
+        Prefer the site **Sync now** button (Actions → Run workflow) when you only need a catalog refresh for PDFs already in the repo.

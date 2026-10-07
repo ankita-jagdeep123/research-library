@@ -157,7 +157,11 @@ Drop a PDF into the right type folder under `PDFs/Digestion/<Topic>/<Category>/`
 
 - Edit **`tag-rules.json`** on GitHub to teach new filename keywords or category hints — no code change required.
 - Existing catalog rows are left alone (manual titles, notes, authors stay).
-- Trigger: push to `PDFs/**` / `tag-rules.json`, weekday schedule, or **Actions → Sync catalog → Run workflow**.
+- Trigger: push to `PDFs/**` / `tag-rules.json`, weekday schedule, site **Sync now** button, **Actions → Sync catalog → Run workflow**, or open a **Sync now** issue (`[Sync] …` / label `sync-now`).
+
+### AI tagging (optional)
+
+When repo secret **`OPENAI_API_KEY`** is set, new sources also get AI-enriched title / author / year / category / tags / note (PDF text via `pdftotext` when available). Optional secrets: `OPENAI_BASE_URL` (default `https://api.openai.com/v1`), `OPENAI_MODEL` (default `gpt-4o-mini`). **Without the key**, folder + filename rules still work — AI is never required.
 
 ## 11. OneDrive → GitHub sync
 
@@ -180,3 +184,18 @@ Documents/Research Library/PDFs/Digestion/Indian Medical Knowledge/<Category>/fi
 - **GitHub** — catalog UI (`index.html` + `library.json`) + public/sample PDFs under `PDFs/`.  
 - Private files you must not publish: keep on OneDrive and paste *Anyone with the link → Can view* into `pdfUrl` via **Add source**.  
 - Public / stampable samples: drop into mirrored folders → sync → auto-tags.
+
+
+## 12. Topic descriptions (where they live)
+
+Topic blurbs (e.g. Indian Medical Knowledge) live in **`library.json`** under `hierarchy.topics[].description` — **not** in `index.html`. The site loads `library.json` (with an embedded `LIBRARY_FALLBACK` copy for offline/OneDrive). Edit the JSON description field and refresh; clear it to hide the lede under the topic title.
+
+## 13. Sync now (refresh catalog)
+
+Three ways to refresh the catalog immediately for PDFs already in the repo:
+
+1. **Site button** — Digestion → Indian Medical Knowledge → **Sync now** opens the Sync catalog workflow; click **Run workflow** on GitHub.
+2. **Actions UI** — https://github.com/ankita-jagdeep123/research-library/actions/workflows/sync-catalog.yml → Run workflow.
+3. **Issue form** — [Sync now](https://github.com/ankita-jagdeep123/research-library/issues/new?template=sync_now.yml) (`[Sync] Refresh catalog` / label `sync-now`) runs auto-catalog, comments, and closes.
+
+OneDrive-only new files (not yet pushed to GitHub) still need the weekday ~7am bot sync, or message Ankita's Bot “sync now”.

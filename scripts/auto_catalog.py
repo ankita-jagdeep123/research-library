@@ -1,11 +1,20 @@
 #!/usr/bin/env python3
-"""Walk PDFs/ and append new local-pdf entries to library.json using tag-rules.json."""
+"""Walk PDFs/ and append new local-pdf entries to library.json using tag-rules.json.
+
+Optional AI enrichment (title/author/year/category/tags/note) when OPENAI_API_KEY
+is set. Failures never abort the run — rule-based drafts are kept.
+"""
 from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
+import shutil
+import subprocess
 import sys
+import urllib.error
+import urllib.request
 from datetime import date
 from pathlib import Path
 
@@ -17,6 +26,12 @@ PDFS_DIR = REPO_ROOT / "PDFs"
 YEAR_RE = re.compile(r"\b((?:19|20)\d{2})\b")
 NON_ALNUM_RE = re.compile(r"[^a-z0-9]+")
 TOKEN_SPLIT_RE = re.compile(r"[-_\s]+")
+JSON_OBJECT_RE = re.compile(r"\{[\s\S]*\}")
+
+DEFAULT_OPENAI_BASE = "https://api.openai.com/v1"
+DEFAULT_OPENAI_MODEL = "gpt-4o-mini"
+PDF_TEXT_LIMIT = 2500
+TAG_CAP = 10
 
 
 def load_json(path: Path) -> dict:
@@ -219,9 +234,205 @@ def catalog_one(
     return entry
 
 
+def extract_pdf_text(path: Path, limit: int = PDF_TEXT_LIMIT) -> str | None:
+    """Extract text from the first two pages via pdftotext if available."""
+    if not shutil.which("pdftotext"):
+        return None
+    try:
+        proc = subprocess.run(
+            ["pdftotext", "-f", "1", "-l", "2", "-layout", str(path), "-"],
+            capture_output=True,
+            text=True,
+            timeout=60,
+            check=False,
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return None
+    if proc.returncode != 0:
+        return None
+    text = (proc.stdout or "").strip()
+    if not text:
+        return None
+    if len(text) > limit:
+        text = text[:limit]
+    return text
+
+
+def _openai_available() -> bool:
+    return bool(os.environ.get("OPENAI_API_KEY", "").strip())
+
+
+def _parse_year_ai(raw) -> int | None:
+    if raw is None or raw == "":
+        return None
+    if isinstance(raw, int):
+        return raw if 1000 <= raw <= 2100 else None
+    if isinstance(raw, float):
+        y = int(raw)
+        return y if 1000 <= y <= 2100 else None
+    s = str(raw).strip()
+    m = YEAR_RE.search(s)
+    if not m:
+        return None
+    try:
+        y = int(m.group(1))
+    except ValueError:
+        return None
+    return y if 1000 <= y <= 2100 else None
+
+
+def merge_tags(rule_tags: list, ai_tags) -> list[str]:
+    out: list[str] = []
+    seen: set[str] = set()
+    for source in (rule_tags or [], ai_tags or []):
+        if not isinstance(source, list):
+            continue
+        for t in source:
+            if not isinstance(t, str):
+                continue
+            cleaned = t.strip()
+            if not cleaned:
+                continue
+            key = cleaned.lower()
+            if key in seen:
+                continue
+            seen.add(key)
+            out.append(cleaned)
+            if len(out) >= TAG_CAP:
+                return out
+    return out
+
+
+def call_openai_enrich(entry: dict, pdf_text: str | None, categories: list[str]) -> dict | None:
+    """POST chat completions; return parsed STRICT JSON dict or None on failure."""
+    api_key = os.environ.get("OPENAI_API_KEY", "").strip()
+    if not api_key:
+        return None
+    base = (os.environ.get("OPENAI_BASE_URL") or DEFAULT_OPENAI_BASE).rstrip("/")
+    model = (os.environ.get("OPENAI_MODEL") or DEFAULT_OPENAI_MODEL).strip() or DEFAULT_OPENAI_MODEL
+
+    cats = ", ".join(categories)
+    excerpt = pdf_text or "(no PDF text extracted — use filename/path hints only)"
+    system = (
+        "You enrich research-library catalog metadata. "
+        "Reply with STRICT JSON only — no markdown fences, no commentary. "
+        'Schema: {"title": string, "author": string|null, "year": int|null, '
+        '"category": string, "tags": string[], "note": string|null}. '
+        f"category MUST be exactly one of: {cats}. "
+        "tags: 3–8 short strings."
+    )
+    user = (
+        f"Rule-based draft:\n{json.dumps(entry, ensure_ascii=False)}\n\n"
+        f"PDF text excerpt (pages 1–2, truncated):\n{excerpt}"
+    )
+    payload = {
+        "model": model,
+        "temperature": 0.2,
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user", "content": user},
+        ],
+        "response_format": {"type": "json_object"},
+    }
+    body = json.dumps(payload).encode("utf-8")
+    req = urllib.request.Request(
+        f"{base}/chat/completions",
+        data=body,
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=90) as resp:
+            raw = resp.read().decode("utf-8")
+    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, OSError) as exc:
+        print(f"  AI API error for {entry.get('id')}: {exc}", file=sys.stderr)
+        return None
+    try:
+        data = json.loads(raw)
+        content = data["choices"][0]["message"]["content"]
+    except (KeyError, IndexError, TypeError, json.JSONDecodeError) as exc:
+        print(f"  AI response shape error for {entry.get('id')}: {exc}", file=sys.stderr)
+        return None
+    if not isinstance(content, str):
+        return None
+    content = content.strip()
+    # Strip accidental fences
+    if content.startswith("```"):
+        content = re.sub(r"^```(?:json)?\s*", "", content)
+        content = re.sub(r"\s*```$", "", content)
+    try:
+        parsed = json.loads(content)
+    except json.JSONDecodeError:
+        m = JSON_OBJECT_RE.search(content)
+        if not m:
+            print(f"  AI JSON parse failed for {entry.get('id')}", file=sys.stderr)
+            return None
+        try:
+            parsed = json.loads(m.group(0))
+        except json.JSONDecodeError:
+            print(f"  AI JSON parse failed for {entry.get('id')}", file=sys.stderr)
+            return None
+    if not isinstance(parsed, dict):
+        return None
+    return parsed
+
+
+def enrich_with_ai(entry: dict, pdf_path: Path, categories: list[str]) -> bool:
+    """Mutate entry with AI fields when possible. Returns True if enriched."""
+    if not _openai_available():
+        return False
+    try:
+        pdf_text = extract_pdf_text(pdf_path)
+        ai = call_openai_enrich(entry, pdf_text, categories)
+        if not ai:
+            return False
+
+        title = ai.get("title")
+        if isinstance(title, str) and title.strip():
+            entry["title"] = title.strip()
+
+        author = ai.get("author")
+        if isinstance(author, str) and author.strip():
+            entry["author"] = author.strip()
+        elif author is None:
+            pass  # keep rule-based (often None)
+
+        year = _parse_year_ai(ai.get("year"))
+        if year is not None:
+            entry["year"] = year
+
+        cat = ai.get("category")
+        if isinstance(cat, str) and cat in categories:
+            entry["category"] = cat
+        # else keep folder/rule category
+
+        note = ai.get("note")
+        if isinstance(note, str) and note.strip():
+            entry["note"] = note.strip()
+
+        entry["tags"] = merge_tags(entry.get("tags") or [], ai.get("tags"))
+        return True
+    except Exception as exc:  # noqa: BLE001 — never fail the whole run
+        print(f"  AI enrich unexpected error for {entry.get('id')}: {exc}", file=sys.stderr)
+        return False
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Auto-catalog PDFs/ into library.json")
     parser.add_argument("--dry-run", action="store_true", help="Print changes without writing")
+    parser.add_argument(
+        "--ai",
+        action="store_true",
+        help="Force attempting AI enrichment (still no-op without OPENAI_API_KEY)",
+    )
+    parser.add_argument(
+        "--no-ai",
+        action="store_true",
+        help="Skip AI enrichment even if OPENAI_API_KEY is set",
+    )
     args = parser.parse_args()
 
     if not LIBRARY_PATH.is_file():
@@ -233,6 +444,17 @@ def main() -> int:
 
     library = load_json(LIBRARY_PATH)
     rules = load_json(RULES_PATH)
+    categories = list(rules.get("categories") or library.get("categories") or [])
+
+    # Default: attempt AI whenever key is present; --ai forces attempt; --no-ai disables
+    want_ai = (not args.no_ai) and (_openai_available() or args.ai)
+    if args.ai and not _openai_available():
+        print("AI requested (--ai) but OPENAI_API_KEY not set — using rule-based only")
+        want_ai = False
+    elif want_ai and _openai_available():
+        print(f"AI enrichment enabled (model={os.environ.get('OPENAI_MODEL') or DEFAULT_OPENAI_MODEL})")
+    else:
+        print("AI enrichment skipped (no OPENAI_API_KEY)")
 
     sources = library.get("sources")
     if not isinstance(sources, list):
@@ -246,16 +468,29 @@ def main() -> int:
     added = 0
     skipped = 0
     new_entries: list[dict] = []
+    # Keep (entry, path) for AI after draft build
+    pending: list[tuple[dict, Path]] = []
 
     for pdf in pdfs:
         entry = catalog_one(pdf, rules, library, existing_urls, existing_ids)
         if entry is None:
             skipped += 1
             continue
-        new_entries.append(entry)
+        pending.append((entry, pdf))
         existing_urls.add(entry["pdfUrl"])
         existing_ids.add(entry["id"])
         added += 1
+
+    for entry, pdf in pending:
+        if want_ai and _openai_available():
+            enriched = enrich_with_ai(entry, pdf, categories)
+            if enriched:
+                print(f"  AI enriched: {entry['id']}")
+            else:
+                print(f"  AI not applied (kept rules): {entry['id']}")
+        else:
+            print(f"  rules only: {entry['id']}")
+        new_entries.append(entry)
 
     if new_entries:
         sources.extend(new_entries)

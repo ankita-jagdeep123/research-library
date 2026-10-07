@@ -959,7 +959,7 @@
       "author": "Edward John Waring (ed.)",
       "year": 1868,
       "category": "Colonial transfer & credit",
-      "note": "Public-domain Wellcome scan; too large for the GitHub repo, so the PDF button opens Wellcome's own PDF. Backup copy on OneDrive (Large scans folder).",
+      "note": "Public-domain Wellcome scan; too large for the GitHub repo, so the PDF button opens Wellcome's own PDF. Kept on the bot box only for now (over 100 MB, too big for automatic OneDrive upload).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b2146604x",
       "originalUrl": "https://wellcomecollection.org/works/jrxxbk9f"
@@ -1232,7 +1232,7 @@
       "author": "Paira Mall",
       "year": 1897,
       "category": "People & case studies",
-      "note": "Digitised Wellcome manuscript (CC BY). PDF opens from Wellcome; backup copy on OneDrive (Large scans folder).",
+      "note": "Digitised Wellcome manuscript (CC BY). PDF opens from Wellcome; kept on the bot box only for now (file is over 100 MB, too big for automatic OneDrive upload).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18419793",
       "originalUrl": "https://wellcomecollection.org/works/mxzxanak"

@@ -1,0 +1,87 @@
+name: Ingest add-source issue
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  ingest:
+    if: >
+      (github.event.action == 'opened' &&
+        (contains(join(github.event.issue.labels.*.name, ','), 'add-source') ||
+         startsWith(github.event.issue.title, '[Source]'))) ||
+      (github.event.action == 'labeled' && github.event.label.name == 'add-source')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Parse issue and append to library.json
+        id: ingest
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: python3 .github/scripts/ingest_source.py
+
+      - name: Commit library.json
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add library.json
+          if git diff --staged --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No library.json changes"
+            exit 0
+          fi
+          git commit -m "Add source: ${{ steps.ingest.outputs.id }} (issue #${{ github.event.issue.number }})"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Comment and close issue
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const id = '${{ steps.ingest.outputs.id }}';
+            const pages = `https://ankita-jagdeep123.github.io/digestion-research-library/`;
+            const body = [
+              `✅ Added source \`${id}\` to \`library.json\` and pushed to \`main\`.`,
+              ``,
+              `GitHub Pages will refresh shortly: ${pages}`,
+              ``,
+              `Open the site → Digestion → Indian Medical Knowledge to see the new card (after the Pages build finishes).`,
+            ].join('\n');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body,
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed',
+            });
+
+      - name: Comment on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: '❌ Could not ingest this issue into `library.json`. Check the workflow log and that Title, Category, and pdfUrl are filled with a valid category from the form.',
+            });

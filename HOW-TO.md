@@ -151,12 +151,32 @@ Host only what you own, public domain, or clearly licensed. Prefer linking IA / 
 
 ---
 
-## OneDrive vs GitHub (read this)
+## 10. Automatic tags
 
-**OneDrive holds the real PDFs** (especially private ones). Share each as *Anyone with the link → Can view* and paste that link into `pdfUrl` (via Add source or by editing `library.json` on GitHub).
+Drop a PDF into the right type folder under `PDFs/Digestion/<Topic>/<Category>/` (on GitHub or after sync from OneDrive). The **Sync catalog** Action (`scripts/auto_catalog.py`) walks `PDFs/`, infers category / topic / tags from the path and `tag-rules.json`, and appends a `library.json` row. You do **not** need to ask the bot for tags.
 
-**GitHub holds the catalog UI** (`index.html` + `library.json`) and optional sample/public PDFs under `PDFs/…`.
+- Edit **`tag-rules.json`** on GitHub to teach new filename keywords or category hints — no code change required.
+- Existing catalog rows are left alone (manual titles, notes, authors stay).
+- Trigger: push to `PDFs/**` / `tag-rules.json`, weekday schedule, or **Actions → Sync catalog → Run workflow**.
 
-Moving or renaming folders on OneDrive does **not** auto-update GitHub. You still update the catalog (Add source form, or edit `library.json` on github.com). Matching folder names on both sides just keeps life sane for you.
+## 11. OneDrive → GitHub sync
 
-Auto-sync OneDrive → GitHub is possible later (Power Automate / script) but is **not** built yet.
+Keep OneDrive folders mirroring the repo tree:
+
+```
+Documents/Research Library/PDFs/Digestion/Indian Medical Knowledge/<Category>/file.pdf
+```
+
+(Your live OneDrive folder may still be named **Research Library Demo** — same nesting under `PDFs/` either way. See `scripts/onedrive_path_map.md`.)
+
+1. Drop new PDFs into the matching OneDrive category folder.  
+2. A **Grok Bot / scheduled sync** copies new OneDrive PDFs into the repo `PDFs/` tree, then auto-catalog runs and updates `library.json`.  
+3. Until Microsoft Graph secrets are added for a pure Actions-only OneDrive pull, the bot routine handles OneDrive → repo copies.  
+4. You can also **upload PDFs directly on GitHub** into the nested `PDFs/…` folders; the Sync catalog Action will pick them up on push.
+
+**OneDrive vs GitHub (summary)**
+
+- **OneDrive** — working store for research PDFs (especially private).  
+- **GitHub** — catalog UI (`index.html` + `library.json`) + public/sample PDFs under `PDFs/`.  
+- Private files you must not publish: keep on OneDrive and paste *Anyone with the link → Can view* into `pdfUrl` via **Add source**.  
+- Public / stampable samples: drop into mirrored folders → sync → auto-tags.

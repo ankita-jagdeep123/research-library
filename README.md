@@ -33,6 +33,9 @@ Repo: https://github.com/ankita-jagdeep123/research-library
 | `docs/ADD-SOURCE.md` | Add a source via GitHub Issue form (no hand-editing HTML). |
 | `.github/ISSUE_TEMPLATE/add_source.yml` | Issue form fields for new sources. |
 | `.github/workflows/ingest-source.yml` | Action that appends to `library.json` and commits. |
+| `tag-rules.json` | Editable keyword rules for auto-tagging local PDFs. |
+| `scripts/auto_catalog.py` | Walks `PDFs/` and appends new `local-pdf` rows to `library.json`. |
+| `.github/workflows/sync-catalog.yml` | Runs auto-catalog on PDF pushes, weekday schedule, or manual dispatch. |
 
 ## Add a source (no HTML editing)
 
@@ -45,6 +48,10 @@ Details: [`docs/ADD-SOURCE.md`](docs/ADD-SOURCE.md).
 > **One-time setup:** the ingest Action YAML could not be pushed with the initial OAuth token (missing `workflow` scope). Enable it by copying `docs/ingest-source.workflow.yml` → `.github/workflows/ingest-source.yml` after `gh auth refresh -s workflow` — see [`docs/ENABLE-INGEST-WORKFLOW.md`](docs/ENABLE-INGEST-WORKFLOW.md). Until then, the Issue form and `library.json` still work; you can edit `library.json` manually or use the form and merge by hand.
 
 **pdfUrl tip:** Private OneDrive PDFs stay as **Anyone with the link → Can view** links. Do not commit secrets or private binary dumps you are not allowed to publish. Sample PDFs under `PDFs/` remain in the repo so demo **Open PDF** works.
+
+## Auto-catalog (no hand-tagging)
+
+Put a PDF under `PDFs/Digestion/<Topic>/<Category>/` (matching OneDrive layout). The Sync catalog Action runs `scripts/auto_catalog.py`, which reads `tag-rules.json` and appends category, topic, tags, and title to `library.json` — you do not need to ask the bot for tags. Edit `tag-rules.json` to teach new keywords. See **Automatic tags** and **OneDrive → GitHub sync** in [`HOW-TO.md`](HOW-TO.md).
 
 ## Why OneDrive folders + this UI (not Airtable)
 

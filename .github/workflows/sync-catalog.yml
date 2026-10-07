@@ -1,0 +1,42 @@
+name: Sync catalog from PDFs
+
+on:
+  push:
+    paths:
+      - "PDFs/**"
+      - "tag-rules.json"
+      - "scripts/auto_catalog.py"
+  workflow_dispatch:
+  schedule:
+    # Weekday ~8:29 ET (UTC-4) / 7:29 ET (UTC-5)
+    - cron: "29 12 * * 1-5"
+
+permissions:
+  contents: write
+
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Auto-catalog PDFs into library.json
+        run: python3 scripts/auto_catalog.py
+
+      - name: Commit library.json if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add library.json
+          if git diff --staged --quiet; then
+            echo "No library.json changes"
+            exit 0
+          fi
+          git commit -m "Auto-catalog: update library.json from PDFs/"
+          git push

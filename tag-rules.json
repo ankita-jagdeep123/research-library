@@ -1,0 +1,44 @@
+{
+  "categories": [
+    "Primary texts & treatises",
+    "Institutions & archives",
+    "People & case studies",
+    "Plants & remedies",
+    "Colonial transfer & credit",
+    "Method notes"
+  ],
+  "topic_aliases": {
+    "indian medical knowledge": "indian-medical-knowledge",
+    "indian-medical-knowledge": "indian-medical-knowledge",
+    "arts": "arts",
+    "dance": "dance"
+  },
+  "project_aliases": {
+    "digestion": "digestion"
+  },
+  "filename_keywords": {
+    "wellcome": ["Wellcome", "archive"],
+    "paira": ["Paira Mall"],
+    "manilal": ["Manilal"],
+    "itty": ["Itty Achuden"],
+    "hortus": ["Hortus Malabaricus"],
+    "bhl": ["BHL"],
+    "hindu": ["The Hindu"],
+    "method": ["method"],
+    "rainforest": ["Rainforest Initiative"],
+    "catalogue": ["catalogue"],
+    "correspondence": ["correspondence"],
+    "memorial": ["memorial"],
+    "stamp": ["archive stamp"]
+  },
+  "category_keywords": {
+    "Primary texts & treatises": ["hortus", "treatise", "edition", "latin", "bhl", "manilal2", "rainforest", "landing"],
+    "Institutions & archives": ["wellcome", "archive", "catalogue", "catalog", "correspondence", "holding"],
+    "People & case studies": ["itty", "paira", "memorial", "biography", "chapter"],
+    "Plants & remedies": ["plant", "remedy", "botanic", "herb"],
+    "Colonial transfer & credit": ["colonial", "credit", "transfer", "appropriat"],
+    "Method notes": ["method", "how-to", "stamp", "note"]
+  },
+  "default_topic_id": "indian-medical-knowledge",
+  "default_category": "Method notes"
+}

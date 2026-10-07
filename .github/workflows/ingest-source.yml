@@ -53,7 +53,7 @@ jobs:
         with:
           script: |
             const id = '${{ steps.ingest.outputs.id }}';
-            const pages = `https://ankita-jagdeep123.github.io/digestion-research-library/`;
+            const pages = `https://ankita-jagdeep123.github.io/research-library/`;
             const body = [
               `✅ Added source \`${id}\` to \`library.json\` and pushed to \`main\`.`,
               ``,

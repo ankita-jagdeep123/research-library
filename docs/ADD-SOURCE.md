@@ -4,7 +4,7 @@ For **Ankita** and anyone covering (including your boss who just needs the site)
 
 ## Live site
 
-https://ankita-jagdeep123.github.io/digestion-research-library/
+https://ankita-jagdeep123.github.io/research-library/
 
 ## Fast path (recommended)
 
@@ -15,7 +15,7 @@ https://ankita-jagdeep123.github.io/digestion-research-library/
 5. Wait a minute for GitHub Pages to rebuild, then refresh the site and search for the new title.
 
 Direct form (if the button is missing):  
-https://github.com/ankita-jagdeep123/digestion-research-library/issues/new?template=add_source.yml
+https://github.com/ankita-jagdeep123/research-library/issues/new?template=add_source.yml
 
 ## What to put in `pdfUrl`
 

@@ -4,9 +4,9 @@ A lightweight, static research library for **Ankita Jagdeep** (Infinity Foundati
 
 ## Live site (GitHub Pages)
 
-**https://ankita-jagdeep123.github.io/digestion-research-library/**
+**https://ankita-jagdeep123.github.io/research-library/**
 
-Repo: https://github.com/ankita-jagdeep123/digestion-research-library
+Repo: https://github.com/ankita-jagdeep123/research-library
 
 ## Browse hierarchy
 
@@ -61,7 +61,7 @@ Details: [`docs/ADD-SOURCE.md`](docs/ADD-SOURCE.md).
 
 ## Quick start for your boss
 
-1. Open https://ankita-jagdeep123.github.io/digestion-research-library/  
+1. Open https://ankita-jagdeep123.github.io/research-library/  
 2. Open **Digestion** → **Indian Medical Knowledge**.  
 3. Filter by type or search → **Open PDF**.  
 4. To contribute a row: **Add source**.

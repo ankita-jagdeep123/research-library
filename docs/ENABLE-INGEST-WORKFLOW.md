@@ -7,7 +7,7 @@ The OAuth token used for the initial push did not include the `workflow` scope, 
 From a machine where `gh` can open a browser (or complete device login):
 
 ```bash
-cd /path/to/digestion-research-library   # or: git clone https://github.com/ankita-jagdeep123/digestion-research-library
+cd /path/to/research-library   # or: git clone https://github.com/ankita-jagdeep123/research-library
 gh auth refresh -h github.com -s repo,workflow,read:org,gist
 mkdir -p .github/workflows
 cp docs/ingest-source.workflow.yml .github/workflows/ingest-source.yml

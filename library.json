@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Infinity Foundation — Research Library (Demo)",
+    "title": "Infinity Foundation — Research Library",
     "owner": "Ankita Jagdeep",
     "org": "Infinity Foundation",
     "updated": "2026-10-06",
-    "description": "Browse Digestion → Indian Medical Knowledge → filter by uniform source types. Demo catalog for OneDrive / static hosting."
+    "description": "Browse research projects (e.g. Digestion) → topics → filter by uniform source types. Catalog for OneDrive + GitHub Pages."
   },
   "hierarchy": {
     "project": {
@@ -79,7 +79,7 @@
       ],
       "note": "Chapter (pp. 41–75) from Hortus Malabaricus and the Socio-Cultural Heritage of India. Local copy of the Internet Archive PDF (item manilal2003 / manilal2.pdf); Original URL opens the IA item page.",
       "status": "Local archive PDF",
-      "pdfUrl": "PDFs/manilal-itty-achuden-chapter.pdf",
+      "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/People & case studies/manilal-itty-achuden-chapter.pdf",
       "originalUrl": "https://archive.org/details/manilal2003",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge"
@@ -138,7 +138,7 @@
       ],
       "note": "Landing page for vols 1–12. Direct host PDFs were unstable in Oct 2026 checks — use BHL/IA for reading copies; keep this stamp for discovery notes.",
       "status": "Local archive PDF",
-      "pdfUrl": "PDFs/rainforest-initiative-hortus-landing.pdf",
+      "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/rainforest-initiative-hortus-landing.pdf",
       "originalUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge"
@@ -159,7 +159,7 @@
       ],
       "note": "News report on the deteriorating Itty Achuthan memorial. Live page may be paywalled — open Wayback for full text; local PDF is a stamped research summary.",
       "status": "Local archive PDF",
-      "pdfUrl": "PDFs/the-hindu-itty-achuden-memorial-2013.pdf",
+      "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/People & case studies/the-hindu-itty-achuden-memorial-2013.pdf",
       "originalUrl": "https://www.thehindu.com/news/cities/Kochi/Memorial-to-man-behind-Hortus-withers-away/article12352475.ece",
       "waybackUrl": "https://web.archive.org/web/20220706005334/https://www.thehindu.com/news/cities/Kochi/Memorial-to-man-behind-Hortus-withers-away/article12352475.ece",
       "topicId": "indian-medical-knowledge"
@@ -179,7 +179,7 @@
       ],
       "note": "WHMM collecting-agent papers, 1911–1921. Local stamped PDF from the live catalogue page for offline browsing.",
       "status": "Local archive PDF",
-      "pdfUrl": "PDFs/wellcome-paira-mall-catalogue.pdf",
+      "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-paira-mall-catalogue.pdf",
       "originalUrl": "https://wellcomecollection.org/works/cckrgza8",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge"
@@ -199,7 +199,7 @@
       ],
       "note": "Fifteen correspondence/expense files (1910–1924) documenting Mall’s travels and collecting for Wellcome.",
       "status": "Local archive PDF",
-      "pdfUrl": "PDFs/wellcome-paira-mall-correspondence.pdf",
+      "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-paira-mall-correspondence.pdf",
       "originalUrl": "https://wellcomecollection.org/works/e6phtu5h",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge"
@@ -219,7 +219,7 @@
       ],
       "note": "Catalogue record for Wellcome’s open-shelf set of Manilal’s English annotated Hortus (vols 1–12).",
       "status": "Local archive PDF",
-      "pdfUrl": "PDFs/wellcome-manilal-hortus-english-2003.pdf",
+      "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-manilal-hortus-english-2003.pdf",
       "originalUrl": "https://wellcomecollection.org/works/zknfheed",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge"
@@ -280,7 +280,7 @@
       ],
       "note": "Explains the page-1 URL stamp pattern used for Wellcome/Hindu web sources. Pair with HOW-TO.md.",
       "status": "Local archive PDF",
-      "pdfUrl": "PDFs/method-url-to-pdf-stamp.pdf",
+      "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Method notes/method-url-to-pdf-stamp.pdf",
       "originalUrl": null,
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge"

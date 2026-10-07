@@ -47,7 +47,7 @@ Research Library/
 - Binaries under `PDFs/.../{type}/`.  
 - Filenames: kebab-case (`wellcome-paira-mall-catalogue.pdf`).
 
-This demo uses a flat `PDFs/` folder for simplicity; nest on OneDrive and update `pdfUrl` paths when you go live.
+Repo `PDFs/` mirrors OneDrive nesting: Digestion → topic → type folder. Keep OneDrive the same shape so paths stay predictable.
 
 ---
 
@@ -68,9 +68,9 @@ Migrate rows later to a Microsoft List if needed; **keep the PDFs**.
 
 ### Preferred: GitHub Issue form (no hand-editing)
 
-Live site: https://ankita-jagdeep123.github.io/digestion-research-library/
+Live site: https://ankita-jagdeep123.github.io/research-library/
 
-1. Open **Digestion → Indian Medical Knowledge** → **Add source** (or use the [issue form](https://github.com/ankita-jagdeep123/digestion-research-library/issues/new?template=add_source.yml)).  
+1. Open **Digestion → Indian Medical Knowledge** → **Add source** (or use the [issue form](https://github.com/ankita-jagdeep123/research-library/issues/new?template=add_source.yml)).  
 2. Fill title, author, year, category (one of the six types), topic (default `indian-medical-knowledge`), tags/note, and URLs.  
 3. For `pdfUrl`: public https PDF, relative `PDFs/…` for repo samples, or a OneDrive **Anyone with the link → Can view** link for private files. **Do not put secrets in the repo.** Private OneDrive PDFs stay as view links — they are not uploaded by the Action.  
 4. Submit. The `ingest-source` Action appends to `library.json`, commits to `main`, comments on the issue, and closes it. Pages updates after the build.  
@@ -119,7 +119,7 @@ Scripts (reportlab / weasyprint) can stamp page 1; keep human review for copyrig
 
 ## 6. Share with your boss
 
-**Option A — live Pages (default):** Send https://ankita-jagdeep123.github.io/digestion-research-library/ — Digestion → Indian Medical Knowledge → filter / search → Open PDF. Use **Add source** to contribute rows.  
+**Option A — live Pages (default):** Send https://ankita-jagdeep123.github.io/research-library/ — Digestion → Indian Medical Knowledge → filter / search → Open PDF. Use **Add source** to contribute rows.  
 
 **Option B — OneDrive folder:** Share the synced folder; he opens `index.html` locally (embedded fallback works offline).  
 
@@ -146,4 +146,17 @@ Host only what you own, public domain, or clearly licensed. Prefer linking IA / 
 
 ## 9. Short pitch
 
-> Open https://ankita-jagdeep123.github.io/digestion-research-library/ → Digestion → Indian Medical Knowledge. Filter by source type (texts, archives, people, etc.) or search, then Open PDF. Add rows with **Add source** (GitHub Issue → Action updates the catalog). Arts and Dance topics are placeholders for later Digestion work.
+> Open https://ankita-jagdeep123.github.io/research-library/ → Digestion → Indian Medical Knowledge. Filter by source type (texts, archives, people, etc.) or search, then Open PDF. Add rows with **Add source** (GitHub Issue → Action updates the catalog). Arts and Dance topics are placeholders for later Digestion work.
+
+
+---
+
+## OneDrive vs GitHub (read this)
+
+**OneDrive holds the real PDFs** (especially private ones). Share each as *Anyone with the link → Can view* and paste that link into `pdfUrl` (via Add source or by editing `library.json` on GitHub).
+
+**GitHub holds the catalog UI** (`index.html` + `library.json`) and optional sample/public PDFs under `PDFs/…`.
+
+Moving or renaming folders on OneDrive does **not** auto-update GitHub. You still update the catalog (Add source form, or edit `library.json` on github.com). Matching folder names on both sides just keeps life sane for you.
+
+Auto-sync OneDrive → GitHub is possible later (Power Automate / script) but is **not** built yet.

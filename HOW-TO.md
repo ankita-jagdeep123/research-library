@@ -16,7 +16,7 @@ Digestion                          ← main book / project
 │         Plants & remedies
 │         Colonial transfer & credit
 │         Method notes
-├── Arts                           ← coming soon
+├── Hindu Mind Sciences            ← coming soon
 └── Dance                          ← coming soon
 ```
 
@@ -94,7 +94,7 @@ Live site: https://ankita-jagdeep123.github.io/research-library/
 
 ### Adding a new Digestion topic later
 
-Edit `hierarchy.topics` in `library.json`: set `status` to `"active"` and add sources with matching `topicId`. Coming-soon stubs (`arts`, `dance`) are already placeholders.
+Edit `hierarchy.topics` in `library.json`: set `status` to `"active"` and add sources with matching `topicId`. Coming-soon stubs (`hindu-mind-sciences`, `dance`) are already placeholders.
 
 ---
 
@@ -146,7 +146,7 @@ Host only what you own, public domain, or clearly licensed. Prefer linking IA / 
 
 ## 9. Short pitch
 
-> Open https://ankita-jagdeep123.github.io/research-library/ → Digestion → Indian Medical Knowledge. Filter by source type (texts, archives, people, etc.) or search, then Open PDF. Add rows with **Add source** (GitHub Issue → Action updates the catalog). Arts and Dance topics are placeholders for later Digestion work.
+> Open https://ankita-jagdeep123.github.io/research-library/ → Digestion → Indian Medical Knowledge. Filter by source type (texts, archives, people, etc.) or search, then Open PDF. Add rows with **Add source** (GitHub Issue → Action updates the catalog). Hindu Mind Sciences and Dance are coming-soon topics; History of Indology is a coming-soon main project.
 
 
 ---
@@ -214,3 +214,7 @@ New PDFs: `auto_catalog.py` writes `onedrivePath` and leaves `onedriveShareUrl` 
 Large scans (>~50 MB) live only in OneDrive `Research Library Demo/Large scans (OneDrive only)/` — outside `PDFs/`, so they are never copied into the repo.
 
 Tags: 3–6 meaningful subject keywords (people, places, plants, institutions, concepts). No filename words, format words (pdf, scan, plates, record), years or website names.
+
+**Volume order is automatic.** Name multi-volume PDFs with `vol N` (e.g. `hortus-indicus-malabaricus-vol-03-....pdf`). `auto_catalog.py` sets `seriesId` + `sequence` from the filename; AI enrichment never changes them, and the site keeps the volumes together in numeric order. Nothing to manage by hand.
+
+**OneDrive links must be "Anyone with the link → Can view"** (they look like `https://1drv.ms/b/c/.../IQ...?e=xxxx`). Links without `?e=` require Microsoft sign-in; the site will not use them (kept as `onedriveOwnerLink`) and Open PDF falls back to the repo/Wellcome copy.

@@ -10,34 +10,101 @@
   "topic_aliases": {
     "indian medical knowledge": "indian-medical-knowledge",
     "indian-medical-knowledge": "indian-medical-knowledge",
-    "arts": "arts",
-    "dance": "dance"
+    "hindu mind sciences": "hindu-mind-sciences",
+    "dance": "dance",
+    "hindu-mind-sciences": "hindu-mind-sciences"
   },
   "project_aliases": {
-    "digestion": "digestion"
+    "digestion": "digestion",
+    "history of indology": "history-of-indology",
+    "history-of-indology": "history-of-indology"
   },
   "filename_keywords": {
-    "wellcome": ["Wellcome", "archive"],
-    "paira": ["Paira Mall"],
-    "manilal": ["Manilal"],
-    "itty": ["Itty Achuden"],
-    "hortus": ["Hortus Malabaricus"],
-    "bhl": ["BHL"],
-    "hindu": ["The Hindu"],
-    "method": ["method"],
-    "rainforest": ["Rainforest Initiative"],
-    "catalogue": ["catalogue"],
-    "correspondence": ["correspondence"],
-    "memorial": ["memorial"],
-    "stamp": ["archive stamp"]
+    "wellcome": [
+      "Wellcome",
+      "archive"
+    ],
+    "paira": [
+      "Paira Mall"
+    ],
+    "manilal": [
+      "Manilal"
+    ],
+    "itty": [
+      "Itty Achuden"
+    ],
+    "hortus": [
+      "Hortus Malabaricus"
+    ],
+    "bhl": [
+      "BHL"
+    ],
+    "hindu": [
+      "The Hindu"
+    ],
+    "method": [
+      "method"
+    ],
+    "rainforest": [
+      "Rainforest Initiative"
+    ],
+    "catalogue": [
+      "catalogue"
+    ],
+    "correspondence": [
+      "correspondence"
+    ],
+    "memorial": [
+      "memorial"
+    ],
+    "stamp": [
+      "archive stamp"
+    ]
   },
   "category_keywords": {
-    "Primary texts & treatises": ["hortus", "treatise", "edition", "latin", "bhl", "manilal2", "rainforest", "landing"],
-    "Institutions & archives": ["wellcome", "archive", "catalogue", "catalog", "correspondence", "holding"],
-    "People & case studies": ["itty", "paira", "memorial", "biography", "chapter"],
-    "Plants & remedies": ["plant", "remedy", "botanic", "herb"],
-    "Colonial transfer & credit": ["colonial", "credit", "transfer", "appropriat"],
-    "Method notes": ["method", "how-to", "stamp", "note"]
+    "Primary texts & treatises": [
+      "hortus",
+      "treatise",
+      "edition",
+      "latin",
+      "bhl",
+      "manilal2",
+      "rainforest",
+      "landing"
+    ],
+    "Institutions & archives": [
+      "wellcome",
+      "archive",
+      "catalogue",
+      "catalog",
+      "correspondence",
+      "holding"
+    ],
+    "People & case studies": [
+      "itty",
+      "paira",
+      "memorial",
+      "biography",
+      "chapter"
+    ],
+    "Plants & remedies": [
+      "plant",
+      "remedy",
+      "botanic",
+      "herb"
+    ],
+    "Colonial transfer & credit": [
+      "colonial",
+      "credit",
+      "transfer",
+      "appropriat"
+    ],
+    "Method notes": [
+      "method",
+      "how-to",
+      "stamp",
+      "note"
+    ]
   },
   "default_topic_id": "indian-medical-knowledge",
   "default_category": "Method notes"

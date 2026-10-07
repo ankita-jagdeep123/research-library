@@ -11,7 +11,7 @@
       "id": "digestion",
       "title": "Digestion",
       "subtitle": "Main book / research project",
-      "description": "Working library for Digestion: sources gathered under thematic topics. Start with Indian Medical Knowledge; other Digestion strands will appear here as they come online."
+      "description": "Sources for the Digestion project, organised by topic."
     },
     "topics": [
       {
@@ -21,16 +21,25 @@
         "description": ""
       },
       {
-        "id": "arts",
-        "title": "Arts",
+        "id": "hindu-mind-sciences",
+        "title": "Hindu Mind Sciences",
         "status": "coming-soon",
-        "description": "Placeholder for Digestion work on arts. Sources will appear here later."
+        "description": "Sources will be added here."
       },
       {
         "id": "dance",
         "title": "Dance",
         "status": "coming-soon",
-        "description": "Placeholder for Digestion work on dance. Sources will appear here later."
+        "description": "Sources will be added here."
+      }
+    ],
+    "otherProjects": [
+      {
+        "id": "history-of-indology",
+        "title": "History of Indology",
+        "subtitle": "Main project",
+        "status": "coming-soon",
+        "description": "Coming soon. Sources will be added here."
       }
     ]
   },
@@ -88,7 +97,8 @@
       "seriesId": "hortus-malabaricus",
       "sequence": 1,
       "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-01-rainforest-initiative.pdf",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/Ac6Xu8PYB6JIvlOXof9nRLY"
+      "onedriveShareUrl": null,
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/Ac6Xu8PYB6JIvlOXof9nRLY"
     },
     {
       "id": "hortus-malabaricus-vol-02",
@@ -113,7 +123,8 @@
       "seriesId": "hortus-malabaricus",
       "sequence": 2,
       "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-02-rainforest-initiative.pdf",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AcG0X-WnLC9Mibup4q76iwg"
+      "onedriveShareUrl": null,
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AcG0X-WnLC9Mibup4q76iwg"
     },
     {
       "id": "hortus-malabaricus-vol-03",
@@ -138,7 +149,8 @@
       "seriesId": "hortus-malabaricus",
       "sequence": 3,
       "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-03-rainforest-initiative.pdf",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AekV40l5PbZGkro4DR11orU"
+      "onedriveShareUrl": null,
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AekV40l5PbZGkro4DR11orU"
     },
     {
       "id": "hortus-malabaricus-vol-04",
@@ -163,7 +175,8 @@
       "seriesId": "hortus-malabaricus",
       "sequence": 4,
       "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-04-rainforest-initiative.pdf",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/ATZQoUuXk5hJr_1XM4TeuPk"
+      "onedriveShareUrl": null,
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/ATZQoUuXk5hJr_1XM4TeuPk"
     },
     {
       "id": "hortus-malabaricus-vol-05",
@@ -188,7 +201,8 @@
       "seriesId": "hortus-malabaricus",
       "sequence": 5,
       "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-05-rainforest-initiative.pdf",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/ASB-q2AVKkdGpJb6kO0Lp3Y"
+      "onedriveShareUrl": null,
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/ASB-q2AVKkdGpJb6kO0Lp3Y"
     },
     {
       "id": "hortus-malabaricus-vol-06",
@@ -213,7 +227,8 @@
       "seriesId": "hortus-malabaricus",
       "sequence": 6,
       "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-06-rainforest-initiative.pdf",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/Af_raPqdT05PsiSTeUYCOBE"
+      "onedriveShareUrl": null,
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/Af_raPqdT05PsiSTeUYCOBE"
     },
     {
       "id": "hortus-malabaricus-vol-07",
@@ -238,7 +253,8 @@
       "seriesId": "hortus-malabaricus",
       "sequence": 7,
       "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-07-rainforest-initiative.pdf",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AUkQpWb8y3RGnALAYOkccJo"
+      "onedriveShareUrl": null,
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AUkQpWb8y3RGnALAYOkccJo"
     },
     {
       "id": "hortus-malabaricus-vol-08",
@@ -263,7 +279,8 @@
       "seriesId": "hortus-malabaricus",
       "sequence": 8,
       "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-08-rainforest-initiative.pdf",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AaZ1FOQYsPFNig7mRnfgSJs"
+      "onedriveShareUrl": null,
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AaZ1FOQYsPFNig7mRnfgSJs"
     },
     {
       "id": "hortus-malabaricus-vol-09",
@@ -288,7 +305,8 @@
       "seriesId": "hortus-malabaricus",
       "sequence": 9,
       "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-09-rainforest-initiative.pdf",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AUg5bzAfpkVMqVCKHybnxR4"
+      "onedriveShareUrl": null,
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AUg5bzAfpkVMqVCKHybnxR4"
     },
     {
       "id": "hortus-malabaricus-vol-10",
@@ -313,7 +331,8 @@
       "seriesId": "hortus-malabaricus",
       "sequence": 10,
       "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-10-rainforest-initiative.pdf",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AY__OH8CDulJjaw0CrdbFnM"
+      "onedriveShareUrl": null,
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AY__OH8CDulJjaw0CrdbFnM"
     },
     {
       "id": "hortus-malabaricus-vol-11",
@@ -338,7 +357,8 @@
       "seriesId": "hortus-malabaricus",
       "sequence": 11,
       "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-11-rainforest-initiative.pdf",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/ASxT_ZuvE0RAtB02su8li9w"
+      "onedriveShareUrl": null,
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/ASxT_ZuvE0RAtB02su8li9w"
     },
     {
       "id": "hortus-malabaricus-vol-12",
@@ -363,7 +383,8 @@
       "seriesId": "hortus-malabaricus",
       "sequence": 12,
       "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-12-rainforest-initiative.pdf",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AUIWZJ4g0JBAtGRwuliRzZM"
+      "onedriveShareUrl": null,
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AUIWZJ4g0JBAtGRwuliRzZM"
     },
     {
       "id": "manilal-itty-2003",
@@ -384,8 +405,9 @@
       "originalUrl": "https://archive.org/details/manilal2003",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/ARV8XM3iGHVNvqISe9sYrSc",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/People & case studies/manilal-itty-achuden-chapter.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/People & case studies/manilal-itty-achuden-chapter.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/ARV8XM3iGHVNvqISe9sYrSc"
     },
     {
       "id": "hindu-itty-memorial",
@@ -406,8 +428,9 @@
       "originalUrl": "https://www.thehindu.com/news/cities/Kochi/Memorial-to-man-behind-Hortus-withers-away/article12352475.ece",
       "waybackUrl": "https://web.archive.org/web/20220706005334/https://www.thehindu.com/news/cities/Kochi/Memorial-to-man-behind-Hortus-withers-away/article12352475.ece",
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AQV5aQTOe95Eh4005s8vzK4",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/People & case studies/the-hindu-itty-achuden-memorial-2013.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/People & case studies/the-hindu-itty-achuden-memorial-2013.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AQV5aQTOe95Eh4005s8vzK4"
     },
     {
       "id": "wellcome-paira-mall",
@@ -427,8 +450,9 @@
       "originalUrl": "https://wellcomecollection.org/works/cckrgza8",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/Ab2nK81cojpKgQ7pFObKWyM",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-paira-mall-catalogue.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-paira-mall-catalogue.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/Ab2nK81cojpKgQ7pFObKWyM"
     },
     {
       "id": "wellcome-paira-corr",
@@ -449,8 +473,9 @@
       "originalUrl": "https://wellcomecollection.org/works/e6phtu5h",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AVK-gspuY59KslWxcs5FKP0",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-paira-mall-correspondence.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-paira-mall-correspondence.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AVK-gspuY59KslWxcs5FKP0"
     },
     {
       "id": "wellcome-manilal-holding",
@@ -470,8 +495,9 @@
       "originalUrl": "https://wellcomecollection.org/works/zknfheed",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AceRI9Pcq6dFrHMcojHXFPw",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-manilal-hortus-english-2003.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-manilal-hortus-english-2003.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AceRI9Pcq6dFrHMcojHXFPw"
     },
     {
       "id": "mpiwg-menon-2023",
@@ -536,8 +562,9 @@
       "originalUrl": null,
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/Ab0Ng026zQtNuD3_CNywdHU",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Method notes/method-url-to-pdf-stamp.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Method notes/method-url-to-pdf-stamp.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/Ab0Ng026zQtNuD3_CNywdHU"
     },
     {
       "id": "apollo-2017-who-owns-heritage-traditional-medicine",
@@ -558,8 +585,9 @@
       "originalUrl": "https://apollo-magazine.com/who-owns-the-heritage-of-traditional-medicine/",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AXYRvPWU849AsyMEJ1u9BbI",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/apollo-2017-who-owns-heritage-traditional-medicine.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/apollo-2017-who-owns-heritage-traditional-medicine.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AXYRvPWU849AsyMEJ1u9BbI"
     },
     {
       "id": "art-newspaper-2026-wellcome-returns-jain-manuscripts",
@@ -580,8 +608,9 @@
       "originalUrl": "https://www.theartnewspaper.com/2026/05/14/wellcome-collection-returns-2000-manuscripts-to-the-jain-community",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AZVGYl0eBsFNsc4E90q03is",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/art-newspaper-2026-wellcome-returns-jain-manuscripts.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/art-newspaper-2026-wellcome-returns-jain-manuscripts.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AZVGYl0eBsFNsc4E90q03is"
     },
     {
       "id": "conversation-2022-walsdorf-wellcome-medicine-man",
@@ -602,8 +631,9 @@
       "originalUrl": "https://theconversation.com/why-wellcome-closed-its-medicine-man-exhibition-and-others-should-follow-suit-196171",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AarWhvLX54BMooHZdKenJFg",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/conversation-2022-walsdorf-wellcome-medicine-man.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/conversation-2022-walsdorf-wellcome-medicine-man.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AarWhvLX54BMooHZdKenJFg"
     },
     {
       "id": "csir-faq-turmeric-patent-tkdl",
@@ -624,8 +654,9 @@
       "originalUrl": "https://www.csir.res.in/en/about-us/faqs?page=3",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AXJE7lUFPgFEmtvacG5ZB7c",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/csir-faq-turmeric-patent-tkdl.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/csir-faq-turmeric-patent-tkdl.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AXJE7lUFPgFEmtvacG5ZB7c"
     },
     {
       "id": "elc-aveda-acquisition-1997-faq",
@@ -645,8 +676,9 @@
       "originalUrl": "https://www.elcompanies.com/en/investors/investor-resources/faqs",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AW0YiS7qt8tCt-CC2Vu3Duc",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/elc-aveda-acquisition-1997-faq.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/elc-aveda-acquisition-1997-faq.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AW0YiS7qt8tCt-CC2Vu3Duc"
     },
     {
       "id": "tkdl-biopiracy-turmeric-neem",
@@ -667,8 +699,9 @@
       "originalUrl": "https://www.tkdl.res.in/tkdl/LangGerman/common/Biopiracy.asp",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/ARlaZtd95qBMv61CMyZjFM4",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/tkdl-biopiracy-turmeric-neem.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/tkdl-biopiracy-turmeric-neem.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/ARlaZtd95qBMv61CMyZjFM4"
     },
     {
       "id": "wellcome-colonial-roots-of-our-collections",
@@ -688,8 +721,9 @@
       "originalUrl": "https://wellcomecollection.org/about-us/the-colonial-roots-of-our-collections--and-our-response",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AVSLXBQ_6stNqoC8AGlJA5k",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/wellcome-colonial-roots-of-our-collections.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/wellcome-colonial-roots-of-our-collections.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AVSLXBQ_6stNqoC8AGlJA5k"
     },
     {
       "id": "wellcome-stories-indian-botanicals-heritage-wars",
@@ -710,8 +744,9 @@
       "originalUrl": "https://wellcomecollection.org/stories/indian-botanicals-and-heritage-wars",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AfGDpq1KaNNDnrfwCk49VZ8",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/wellcome-stories-indian-botanicals-heritage-wars.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/wellcome-stories-indian-botanicals-heritage-wars.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AfGDpq1KaNNDnrfwCk49VZ8"
     },
     {
       "id": "wipo-magazine-protecting-indias-traditional-knowledge",
@@ -733,8 +768,9 @@
       "originalUrl": "https://www.wipo.int/en/web/wipo-magazine/articles/protectingindias-traditional-knowledge-37721",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AVPyLHty8nFPqXWpE7f_hko",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/wipo-magazine-protecting-indias-traditional-knowledge.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/wipo-magazine-protecting-indias-traditional-knowledge.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AVPyLHty8nFPqXWpE7f_hko"
     },
     {
       "id": "gsk-history-and-heritage",
@@ -754,8 +790,9 @@
       "originalUrl": "https://www.gsk.com/en-gb/company/history-and-heritage/",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AQyGGCIxg-xJtUNZvgYtLZI",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/gsk-history-and-heritage.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/gsk-history-and-heritage.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AQyGGCIxg-xJtUNZvgYtLZI"
     },
     {
       "id": "wellcome-ayurvedic-man-exhibition-2017",
@@ -775,8 +812,9 @@
       "originalUrl": "https://wellcomecollection.org/ayurvedic-man--encounters-with-indian-medicine-opens-at-wellcome-collection",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AWyPerQ-fEFEkm7JAnEXwGo",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-ayurvedic-man-exhibition-2017.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-ayurvedic-man-exhibition-2017.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AWyPerQ-fEFEkm7JAnEXwGo"
     },
     {
       "id": "wellcome-foundation-ltd-archive-wf-record",
@@ -797,8 +835,9 @@
       "originalUrl": null,
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/Acbm6NQKQKxDt38ZdB8lgwA",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-foundation-ltd-archive-WF-record.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-foundation-ltd-archive-WF-record.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/Acbm6NQKQKxDt38ZdB8lgwA"
     },
     {
       "id": "wellcome-history-of-wellcome",
@@ -819,8 +858,9 @@
       "originalUrl": "https://wellcome.org/who-we-are/history-wellcome",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/ATIL8PrJHG1Dsu-TGDi1OSE",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-history-of-wellcome.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-history-of-wellcome.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/ATIL8PrJHG1Dsu-TGDi1OSE"
     },
     {
       "id": "wellcome-paira-mall-early-correspondence-1912",
@@ -840,8 +880,9 @@
       "originalUrl": "https://wellcomecollection.org/works/ervknb4k",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/ARwA9WjMCYVOuRFogAlY188",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-paira-mall-early-correspondence-1912.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-paira-mall-early-correspondence-1912.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/ARwA9WjMCYVOuRFogAlY188"
     },
     {
       "id": "cen-2005-emergence-pharmaceutical-industry",
@@ -861,8 +902,9 @@
       "originalUrl": "https://cen.acs.org/articles/83/i25/EMERGENCE-PHARMACEUTICAL-SCIENCE-INDUSTRY-1870.html",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AXGOShmCC6xCmNOhAiGlHZQ",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Method notes/cen-2005-emergence-pharmaceutical-industry.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Method notes/cen-2005-emergence-pharmaceutical-industry.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AXGOShmCC6xCmNOhAiGlHZQ"
     },
     {
       "id": "wellcome-larson-2009-infinity-of-things-record",
@@ -882,8 +924,9 @@
       "originalUrl": "https://wellcomecollection.org/works/qchfwrgu",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AQks1ORmGIlDsx8be-tJLHE",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/People & case studies/wellcome-larson-2009-infinity-of-things-record.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/People & case studies/wellcome-larson-2009-infinity-of-things-record.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AQks1ORmGIlDsx8be-tJLHE"
     },
     {
       "id": "wellcome-stories-ayurvedic-man-curator-interview",
@@ -904,8 +947,9 @@
       "originalUrl": "https://wellcomecollection.org/stories/inside-the-mind-of-ayurvedic-man-s-curator--b-rbara-rodriguez-mu-oz",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AWn5Fwrpt11Oimbw9aaaRVU",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/People & case studies/wellcome-stories-ayurvedic-man-curator-interview.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/People & case studies/wellcome-stories-ayurvedic-man-curator-interview.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AWn5Fwrpt11Oimbw9aaaRVU"
     },
     {
       "id": "nlm-parascandola-2003-chaulmoogra-oil-leprosy",
@@ -925,8 +969,9 @@
       "originalUrl": "https://lhncbc.nlm.nih.gov/LHC-publications/PDF/pub2003048.pdf",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/ATt025LIm6pOlIvQgliZnok",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Plants & remedies/nlm-parascandola-2003-chaulmoogra-oil-leprosy.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Plants & remedies/nlm-parascandola-2003-chaulmoogra-oil-leprosy.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/ATt025LIm6pOlIvQgliZnok"
     },
     {
       "id": "pmc-dogra-2013-leprosy-path-to-eradication",
@@ -946,8 +991,9 @@
       "originalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3657879/",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AY37b7g3VYdPvBMi6vyhT9E",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Plants & remedies/pmc-dogra-2013-leprosy-path-to-eradication.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Plants & remedies/pmc-dogra-2013-leprosy-path-to-eradication.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AY37b7g3VYdPvBMi6vyhT9E"
     },
     {
       "id": "pmc-lobay-2015-rauwolfia-hypertension",
@@ -968,8 +1014,9 @@
       "originalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4566472/",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AaHEMc-plpRFvTy34odHyIc",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Plants & remedies/pmc-lobay-2015-rauwolfia-hypertension.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Plants & remedies/pmc-lobay-2015-rauwolfia-hypertension.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AaHEMc-plpRFvTy34odHyIc"
     },
     {
       "id": "pmc-oshaughnessy-indian-hemp-reprint",
@@ -990,8 +1037,9 @@
       "originalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2490410/",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AWw181s938dGoAC-_n5KC9Y",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Plants & remedies/pmc-oshaughnessy-indian-hemp-reprint.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Plants & remedies/pmc-oshaughnessy-indian-hemp-reprint.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AWw181s938dGoAC-_n5KC9Y"
     },
     {
       "id": "oshaughnessy-1839-indian-hemp-wellcome-scan",
@@ -1013,8 +1061,9 @@
       "originalUrl": "https://wellcomecollection.org/works/yuwk7u76",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AXIb6DRLpjNCoEceHAbcMxE",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/oshaughnessy-1839-indian-hemp-wellcome-scan.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/oshaughnessy-1839-indian-hemp-wellcome-scan.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AXIb6DRLpjNCoEceHAbcMxE"
     },
     {
       "id": "wellcome-ainslie-materia-medica-hindoostan-1813-record",
@@ -1034,8 +1083,9 @@
       "originalUrl": "https://wellcomecollection.org/works/nkuum6j9",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/ATGxnSQz3F1EjbnS20YqvZo",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/wellcome-ainslie-materia-medica-hindoostan-1813-record.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/wellcome-ainslie-materia-medica-hindoostan-1813-record.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/ATGxnSQz3F1EjbnS20YqvZo"
     },
     {
       "id": "wellcome-clusius-aromatum-historia-record",
@@ -1055,8 +1105,9 @@
       "originalUrl": "https://wellcomecollection.org/works/rwhttyc7",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/Ac5nqSyYf8NGs90a6LZXXkU",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/wellcome-clusius-aromatum-historia-record.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/wellcome-clusius-aromatum-historia-record.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/Ac5nqSyYf8NGs90a6LZXXkU"
     },
     {
       "id": "wellcome-medicine-trade-empire-orta-2015-record",
@@ -1076,8 +1127,9 @@
       "originalUrl": "https://wellcomecollection.org/works/bcwbpz72",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AbU-GVaQ_WROlF0t9N3zfAw",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/wellcome-medicine-trade-empire-orta-2015-record.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/wellcome-medicine-trade-empire-orta-2015-record.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AbU-GVaQ_WROlF0t9N3zfAw"
     },
     {
       "id": "wellcome-orta-coloquios-1891-record",
@@ -1097,8 +1149,9 @@
       "originalUrl": "https://wellcomecollection.org/works/accmg79d",
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/ATkPxxp5yO9LtwFYk8HrXzw",
-      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/wellcome-orta-coloquios-1891-record.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/wellcome-orta-coloquios-1891-record.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/ATkPxxp5yO9LtwFYk8HrXzw"
     },
     {
       "type": "pdf",
@@ -1118,8 +1171,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b21297368_0001",
       "originalUrl": "https://wellcomecollection.org/works/accmg79d",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/Aa2cs5TYYGtKvt_VpKsoUsY",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/orta-coloquios-vol1-1891-wellcome.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/orta-coloquios-vol1-1891-wellcome.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/Aa2cs5TYYGtKvt_VpKsoUsY"
     },
     {
       "type": "pdf",
@@ -1139,8 +1193,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b21297368_0002",
       "originalUrl": "https://wellcomecollection.org/works/accmg79d",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AZUG8fDjIwZDiGjjhOQL310",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/orta-coloquios-vol2-1895-wellcome.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/orta-coloquios-vol2-1895-wellcome.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AZUG8fDjIwZDiGjjhOQL310"
     },
     {
       "type": "pdf",
@@ -1160,8 +1215,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b28037340",
       "originalUrl": "https://wellcomecollection.org/works/nkuum6j9",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AWQXXmFT3atOosojrc5qVh8",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/ainslie-1813-materia-medica-hindoostan-wellcome.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/ainslie-1813-materia-medica-hindoostan-wellcome.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AWQXXmFT3atOosojrc5qVh8"
     },
     {
       "type": "pdf",
@@ -1181,8 +1237,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b2146604x",
       "originalUrl": "https://wellcomecollection.org/works/jrxxbk9f",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AeM_o9OAQydBl-JYqACCDNA",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/pharmacopoeia-of-india-1868-wellcome.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/pharmacopoeia-of-india-1868-wellcome.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AeM_o9OAQydBl-JYqACCDNA"
     },
     {
       "type": "pdf",
@@ -1201,8 +1258,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18538952",
       "originalUrl": "https://wellcomecollection.org/works/a42m5sw8",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AWdyHCzkHWdDqe4Fl-QlQJQ",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-11-1916.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-11-1916.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AWdyHCzkHWdDqe4Fl-QlQJQ"
     },
     {
       "type": "pdf",
@@ -1221,8 +1279,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18474056",
       "originalUrl": "https://wellcomecollection.org/works/bnze5ac7",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AVXo9ITLSadJt-7qOWjDeSQ",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-b-1-1911-1915.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-b-1-1911-1915.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AVXo9ITLSadJt-7qOWjDeSQ"
     },
     {
       "type": "web",
@@ -1241,8 +1300,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://wellcomecollection.org/works/cjk8ssea",
       "originalUrl": "https://wellcomecollection.org/works/cjk8ssea",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AYIdceJ9aVZPgEJDRSOFySA",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-15-1920.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-15-1920.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AYIdceJ9aVZPgEJDRSOFySA"
     },
     {
       "type": "pdf",
@@ -1261,8 +1321,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b19533081",
       "originalUrl": "https://wellcomecollection.org/works/ctjrt98v",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/Ae8W-Hb2LGROjvJQGqlwLbk",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-7-1911.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-7-1911.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/Ae8W-Hb2LGROjvJQGqlwLbk"
     },
     {
       "type": "pdf",
@@ -1281,8 +1342,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18275394",
       "originalUrl": "https://wellcomecollection.org/works/d54znckw",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AWrjLbZ9XMNPiWJn3NrO5HU",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-5-1904.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-5-1904.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AWrjLbZ9XMNPiWJn3NrO5HU"
     },
     {
       "type": "pdf",
@@ -1301,8 +1363,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18346522",
       "originalUrl": "https://wellcomecollection.org/works/de5t4fa2",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AVGTN9OEtcREuR8swFjuvVs",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-8-1912.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-8-1912.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AVGTN9OEtcREuR8swFjuvVs"
     },
     {
       "type": "pdf",
@@ -1321,8 +1384,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18385199",
       "originalUrl": "https://wellcomecollection.org/works/fq6kd9qk",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AZSPN-PmnYpLpbgU-kDJNx4",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-c-1-1909.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-c-1-1909.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AZSPN-PmnYpLpbgU-kDJNx4"
     },
     {
       "type": "web",
@@ -1344,8 +1408,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://wellcomecollection.org/works/jgpa6m8n",
       "originalUrl": "https://wellcomecollection.org/works/jgpa6m8n",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/Afc5Awl_yOtAt4SKgG8pgJA",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-c-5-1920.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-c-5-1920.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/Afc5Awl_yOtAt4SKgG8pgJA"
     },
     {
       "type": "pdf",
@@ -1364,8 +1429,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18518114",
       "originalUrl": "https://wellcomecollection.org/works/jugkcvkq",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AUtHumADDj1EuQMA6jNRq08",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-10-1915.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-10-1915.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AUtHumADDj1EuQMA6jNRq08"
     },
     {
       "type": "web",
@@ -1384,8 +1450,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://wellcomecollection.org/works/kd42qfex",
       "originalUrl": "https://wellcomecollection.org/works/kd42qfex",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AZy9zDPRtw1Ahl99I80KpZY",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-16-1921.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-16-1921.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AZy9zDPRtw1Ahl99I80KpZY"
     },
     {
       "type": "web",
@@ -1404,8 +1471,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://wellcomecollection.org/works/m4t7zqcm",
       "originalUrl": "https://wellcomecollection.org/works/m4t7zqcm",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/Aezqpv2X4QxGqEdGJz_0OvM",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-17-1925.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-17-1925.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/Aezqpv2X4QxGqEdGJz_0OvM"
     },
     {
       "type": "pdf",
@@ -1424,8 +1492,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18309288",
       "originalUrl": "https://wellcomecollection.org/works/mnb2gpz2",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AShORuidFChDlvl6XzJPJ4g",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-3-1902.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-3-1902.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AShORuidFChDlvl6XzJPJ4g"
     },
     {
       "type": "pdf",
@@ -1444,8 +1513,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18419793",
       "originalUrl": "https://wellcomecollection.org/works/mxzxanak",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/ARloLnk44XZEigKr-RvOmAM",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-1-1897.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-1-1897.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/ARloLnk44XZEigKr-RvOmAM"
     },
     {
       "type": "web",
@@ -1464,8 +1534,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://wellcomecollection.org/works/ndsyp5rq",
       "originalUrl": "https://wellcomecollection.org/works/ndsyp5rq",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AaBfes2UJhREvIwydiEh4IQ",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-14-1919.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-14-1919.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AaBfes2UJhREvIwydiEh4IQ"
     },
     {
       "type": "web",
@@ -1487,8 +1558,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://wellcomecollection.org/works/ngee232d",
       "originalUrl": "https://wellcomecollection.org/works/ngee232d",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/ATsQeBeluNVFhLxSjMNizlo",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-c-6-1920.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-c-6-1920.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/ATsQeBeluNVFhLxSjMNizlo"
     },
     {
       "type": "web",
@@ -1507,8 +1579,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://wellcomecollection.org/works/paa683gn",
       "originalUrl": "https://wellcomecollection.org/works/paa683gn",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AVg2MDeAdMpOtTsSxnlX5OI",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-c-3-1913.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-c-3-1913.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AVg2MDeAdMpOtTsSxnlX5OI"
     },
     {
       "type": "pdf",
@@ -1527,8 +1600,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18525234",
       "originalUrl": "https://wellcomecollection.org/works/pxq5g2e3",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AfryJEqGqXdMnUIwEdPemHc",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-6-1906.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-6-1906.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AfryJEqGqXdMnUIwEdPemHc"
     },
     {
       "type": "pdf",
@@ -1547,8 +1621,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18359528",
       "originalUrl": "https://wellcomecollection.org/works/qky6dvan",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AaXfZdCs08hErQN0vw-RClw",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-9-1914.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-9-1914.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AaXfZdCs08hErQN0vw-RClw"
     },
     {
       "type": "pdf",
@@ -1567,8 +1642,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18344227",
       "originalUrl": "https://wellcomecollection.org/works/rdgksacs",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AUojaOQrTqxIgIM40JvRY5g",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-12-1917.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-12-1917.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AUojaOQrTqxIgIM40JvRY5g"
     },
     {
       "type": "web",
@@ -1587,8 +1663,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://wellcomecollection.org/works/rquxgtt4",
       "originalUrl": "https://wellcomecollection.org/works/rquxgtt4",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AUL-l9AK1opMgaqoR_ARAMo",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-c-9-early-20th-c.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-c-9-early-20th-c.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AUL-l9AK1opMgaqoR_ARAMo"
     },
     {
       "type": "web",
@@ -1607,8 +1684,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://wellcomecollection.org/works/ruu2ucsn",
       "originalUrl": "https://wellcomecollection.org/works/ruu2ucsn",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AYp9bJn_HE5Pruz7JgloJEI",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-b-3-1912-1920.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-b-3-1912-1920.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AYp9bJn_HE5Pruz7JgloJEI"
     },
     {
       "type": "web",
@@ -1627,8 +1705,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://wellcomecollection.org/works/t357vtw6",
       "originalUrl": "https://wellcomecollection.org/works/t357vtw6",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AQhKJWJi-GBDgO1jd93y0Hs",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-c-7-1921.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-c-7-1921.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AQhKJWJi-GBDgO1jd93y0Hs"
     },
     {
       "type": "web",
@@ -1647,8 +1726,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://wellcomecollection.org/works/tb9j55vd",
       "originalUrl": "https://wellcomecollection.org/works/tb9j55vd",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AfcDpv08LepFmaONl8Gp_ao",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-8b-1913.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-8b-1913.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AfcDpv08LepFmaONl8Gp_ao"
     },
     {
       "type": "web",
@@ -1667,8 +1747,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://wellcomecollection.org/works/u8a2jf3z",
       "originalUrl": "https://wellcomecollection.org/works/u8a2jf3z",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AThee-XPc19JsFLkRjBPzj8",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-c-10-early-20th-c.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-c-10-early-20th-c.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AThee-XPc19JsFLkRjBPzj8"
     },
     {
       "type": "web",
@@ -1690,8 +1771,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://wellcomecollection.org/works/v9j4m4an",
       "originalUrl": "https://wellcomecollection.org/works/v9j4m4an",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AS_A7ZEusS5As3PyEaeMmLQ",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-c-4-1920.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-c-4-1920.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AS_A7ZEusS5As3PyEaeMmLQ"
     },
     {
       "type": "web",
@@ -1710,8 +1792,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://wellcomecollection.org/works/ved462q6",
       "originalUrl": "https://wellcomecollection.org/works/ved462q6",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AQ2ezwfyuZ5Dl9wrSzJZq30",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-13-1918.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-13-1918.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AQ2ezwfyuZ5Dl9wrSzJZq30"
     },
     {
       "type": "web",
@@ -1730,8 +1813,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://wellcomecollection.org/works/wgyur3ne",
       "originalUrl": "https://wellcomecollection.org/works/wgyur3ne",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AesxOWahxk5FuMUd-Z4R1O0",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-c-8-early-20th-c.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-c-8-early-20th-c.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AesxOWahxk5FuMUd-Z4R1O0"
     },
     {
       "type": "pdf",
@@ -1750,8 +1834,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b1929749x",
       "originalUrl": "https://wellcomecollection.org/works/wvu6prnm",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AbRLy0aOopVBoZSWhsVLOGQ",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-2-1898.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-2-1898.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AbRLy0aOopVBoZSWhsVLOGQ"
     },
     {
       "type": "pdf",
@@ -1770,8 +1855,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18258165",
       "originalUrl": "https://wellcomecollection.org/works/xvhax6gd",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AXYv4mOUBhFGnGOxthZ-72I",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-4-1903.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-a-4-1903.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AXYv4mOUBhFGnGOxthZ-72I"
     },
     {
       "type": "web",
@@ -1790,8 +1876,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://wellcomecollection.org/works/yh89jads",
       "originalUrl": "https://wellcomecollection.org/works/yh89jads",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/AUoQ0PVRDaVMiR7cncz6e9s",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-b-2-1919-1921.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-b-2-1919-1921.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/AUoQ0PVRDaVMiR7cncz6e9s"
     },
     {
       "type": "pdf",
@@ -1810,8 +1897,9 @@
       "status": "OneDrive PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18322840",
       "originalUrl": "https://wellcomecollection.org/works/zggv87ad",
-      "onedriveShareUrl": "https://1drv.ms/b/c/ACD215A5F926CFCE/Af4jGei-Du5Fp5BF7kT26lE",
-      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-c-2-1912.pdf"
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/paira-mall-c-2-1912.pdf",
+      "onedriveOwnerLink": "https://1drv.ms/b/c/ACD215A5F926CFCE/Af4jGei-Du5Fp5BF7kT26lE"
     },
     {
       "type": "local-pdf",

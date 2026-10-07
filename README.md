@@ -13,7 +13,8 @@ Repo: https://github.com/ankita-jagdeep123/research-library
 1. **Digestion** — main book / research project  
 2. **Topics under Digestion**
    - **Indian Medical Knowledge** (active demo)
-   - **Arts**, **Dance** (coming-soon placeholders)
+   - **Hindu Mind Sciences**, **Dance** (coming soon)
+   - Second main project: **History of Indology** (coming soon)
 3. **Inside Indian Medical Knowledge** — filter chips are *uniform types* (not mixed book titles vs. people):
    - Primary texts & treatises  
    - Institutions & archives  

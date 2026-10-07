@@ -54,7 +54,7 @@ body:
       description: Digestion topic id.
       options:
         - indian-medical-knowledge
-        - arts
+        - hindu-mind-sciences
         - dance
       default: 0
     validations:

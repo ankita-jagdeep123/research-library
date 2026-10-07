@@ -128,6 +128,30 @@ JUNK_TAGS = {
 }
 
 
+VOL_RE = re.compile(r"(?:^|[^a-z])(?:vol(?:ume)?)[\s._-]*0*(\d{1,3})(?![0-9])", re.I)
+
+
+def apply_series(entry: dict, stem: str) -> None:
+    """Multi-volume works: derive seriesId + sequence from 'vol N' in the filename.
+
+    Runs after AI enrichment so AI can never change ordering. The series id is the
+    filename text before 'vol', e.g. hortus-indicus-malabaricus-vol-03-... ->
+    seriesId 'hortus-indicus-malabaricus', sequence 3. Must match existing rows'
+    seriesId so new volumes sort next to old ones.
+    """
+    m = VOL_RE.search(stem)
+    if not m:
+        return
+    prefix = stem[: m.start()].strip(" ._-")
+    if not prefix:
+        return
+    sid = slugify(prefix)
+    if sid == "hortus-indicus-malabaricus":
+        sid = "hortus-malabaricus"  # existing series id in library.json
+    entry["seriesId"] = sid
+    entry["sequence"] = int(m.group(1))
+
+
 def tags_from_filename(stem: str, filename_keywords: dict[str, list[str]]) -> list[str]:
     lower = stem.lower()
     tags: list[str] = []
@@ -495,6 +519,7 @@ def main() -> int:
             skipped += 1
             continue
         pending.append((entry, pdf))
+        apply_series(entry, pdf.stem)  # after AI: AI never touches ordering
         existing_urls.add(entry["pdfUrl"])
         existing_ids.add(entry["id"])
         added += 1

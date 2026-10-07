@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Infinity Foundation — Research Library (Demo)</title>
+<meta name="description" content="Digestion research library: browse Indian Medical Knowledge by uniform source types." />
+<style>
+  :root {
+    --ink: #1c241c;
+    --ink-soft: #3d4a3d;
+    --muted: #6b7368;
+    --paper: #f7f4ee;
+    --paper-2: #efe9df;
+    --card: #fffcf7;
+    --line: #d9d0c0;
+    --accent: #5c6b4a;
+    --accent-deep: #3e4a32;
+    --gold: #8b7355;
+    --badge-bg: #e8efe3;
+    --badge-ink: #2f3d28;
+    --soon-bg: #f0ebe3;
+    --soon-ink: #7a6f5c;
+    --shadow: 0 1px 2px rgba(28,36,28,.06), 0 8px 24px rgba(28,36,28,.05);
+    --radius: 12px;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --sans: "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: var(--sans);
+    color: var(--ink);
+    background:
+      radial-gradient(1200px 600px at 10% -10%, #e7efe0 0%, transparent 55%),
+      radial-gradient(900px 500px at 100% 0%, #efe6d6 0%, transparent 50%),
+      var(--paper);
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 28px 20px 64px; }
+  header.hero {
+    display: grid; gap: 10px; margin-bottom: 24px; padding-bottom: 20px;
+    border-bottom: 1px solid var(--line);
+  }
+  .eyebrow {
+    font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--gold); font-weight: 600;
+  }
+  h1 {
+    font-family: var(--serif); font-weight: 600;
+    font-size: clamp(1.55rem, 3vw, 2.05rem); line-height: 1.2; margin: 0;
+  }
+  .lede { margin: 0; max-width: 64ch; color: var(--ink-soft); font-size: 0.98rem; }
+  .meta-row {
+    display: flex; flex-wrap: wrap; gap: 10px 18px;
+    font-size: 0.82rem; color: var(--muted);
+  }
+  .crumbs {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+    font-size: 0.84rem; color: var(--muted); margin-bottom: 8px;
+  }
+  .crumbs button {
+    appearance: none; border: none; background: none; padding: 0;
+    color: var(--accent-deep); font: inherit; cursor: pointer; text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .crumbs button:hover { color: var(--ink); }
+  .crumbs .here { color: var(--ink-soft); font-weight: 600; text-decoration: none; cursor: default; }
+  .crumbs .sep { opacity: 0.5; }
+  .view { display: none; }
+  .view.active { display: block; }
+
+  .project-card, .topic-card {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 22px 22px 18px; box-shadow: var(--shadow); margin-bottom: 14px;
+  }
+  .project-card h2, .topic-card h2 {
+    font-family: var(--serif); font-size: 1.35rem; margin: 0 0 8px; font-weight: 600;
+  }
+  .project-card p, .topic-card p { margin: 0 0 14px; color: var(--ink-soft); max-width: 62ch; }
+  .topic-grid { display: grid; gap: 12px; }
+  @media (min-width: 720px) {
+    .topic-grid { grid-template-columns: repeat(2, 1fr); }
+    .topic-grid .topic-card.span-full { grid-column: 1 / -1; }
+  }
+  .topic-card.disabled { opacity: 0.85; }
+  .topic-card .row {
+    display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between;
+  }
+  .badge {
+    display: inline-block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.03em;
+    padding: 4px 9px; border-radius: 999px; background: var(--badge-bg); color: var(--badge-ink);
+    white-space: nowrap;
+  }
+  .badge.soon { background: var(--soon-bg); color: var(--soon-ink); }
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px; text-decoration: none;
+    border-radius: 9px; padding: 8px 13px; font-size: 0.86rem; font-weight: 600;
+    border: 1px solid transparent; cursor: pointer; font-family: inherit;
+  }
+  .btn-primary { background: var(--accent-deep); color: #fff; }
+  .btn-primary:hover { background: #2f3826; }
+  .btn-primary:disabled, .btn:disabled {
+    background: var(--paper-2); color: var(--muted); border-color: var(--line); cursor: not-allowed;
+  }
+  .btn-secondary {
+    background: transparent; color: var(--accent-deep); border-color: var(--line);
+  }
+  .btn-secondary:hover { border-color: var(--accent); background: var(--paper-2); }
+
+  .layout {
+    display: grid; grid-template-columns: 260px 1fr; gap: 24px; align-items: start;
+  }
+  @media (max-width: 820px) {
+    .layout { grid-template-columns: 1fr; }
+    aside.filters { position: static; }
+    .chip-list { flex-direction: row; flex-wrap: wrap; }
+  }
+  aside.filters {
+    position: sticky; top: 16px; background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 16px; box-shadow: var(--shadow);
+  }
+  .filter-title { font-family: var(--serif); font-size: 1rem; margin: 0 0 6px; }
+  .filter-hint { font-size: 0.78rem; color: var(--muted); margin: 0 0 12px; }
+  .chip-list { display: flex; flex-direction: column; gap: 6px; }
+  .chip {
+    appearance: none; border: 1px solid var(--line); background: var(--paper);
+    color: var(--ink-soft); border-radius: 999px; padding: 7px 12px;
+    font-size: 0.8rem; text-align: left; cursor: pointer;
+    transition: background .15s, border-color .15s, color .15s;
+  }
+  .chip:hover { border-color: var(--accent); color: var(--accent-deep); }
+  .chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .chip .count { opacity: 0.75; font-size: 0.72rem; margin-left: 4px; }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 16px; }
+  .search-wrap { flex: 1 1 260px; position: relative; }
+  .search-wrap input {
+    width: 100%; border: 1px solid var(--line); background: var(--card); border-radius: 10px;
+    padding: 11px 14px 11px 38px; font-size: 0.95rem; color: var(--ink); outline: none;
+    box-shadow: var(--shadow);
+  }
+  .search-wrap input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(92,107,74,.18); }
+  .search-wrap .icon {
+    position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+    color: var(--muted); pointer-events: none;
+  }
+  .result-meta { font-size: 0.84rem; color: var(--muted); white-space: nowrap; }
+  .cards { display: grid; gap: 14px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 18px 18px 16px; box-shadow: var(--shadow); display: grid; gap: 10px;
+  }
+  .card-top { display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; align-items: flex-start; }
+  .card h2 {
+    font-family: var(--serif); font-size: 1.1rem; line-height: 1.3; margin: 0;
+    font-weight: 600; flex: 1 1 220px;
+  }
+  .byline { font-size: 0.88rem; color: var(--ink-soft); }
+  .note { margin: 0; font-size: 0.92rem; color: var(--ink-soft); }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag {
+    font-size: 0.72rem; color: var(--muted); background: var(--paper-2);
+    border-radius: 6px; padding: 3px 8px;
+  }
+  .cat-pill {
+    font-size: 0.72rem; color: var(--accent-deep); border: 1px solid #c5d0b8;
+    background: #f2f6ee; border-radius: 6px; padding: 3px 8px;
+  }
+  .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+  .empty {
+    padding: 36px 20px; text-align: center; color: var(--muted);
+    border: 1px dashed var(--line); border-radius: var(--radius); background: rgba(255,252,247,.6);
+  }
+  .soon-panel {
+    padding: 28px 22px; background: var(--card); border: 1px dashed var(--line);
+    border-radius: var(--radius); color: var(--ink-soft); max-width: 52ch;
+  }
+  footer {
+    margin-top: 36px; padding-top: 18px; border-top: 1px solid var(--line);
+    font-size: 0.8rem; color: var(--muted);
+  }
+  .data-source strong { color: var(--ink-soft); }
+  .toolbar-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .btn-add {
+    background: #fff; color: var(--accent-deep); border: 1px solid var(--accent);
+    white-space: nowrap;
+  }
+  .btn-add:hover { background: var(--badge-bg); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="eyebrow">Infinity Foundation · Research Library</div>
+      <nav class="crumbs" id="crumbs" aria-label="Breadcrumb"></nav>
+      <h1 id="pageTitle">Research Library</h1>
+      <p class="lede" id="pageLede"></p>
+      <div class="meta-row">
+        <span>Curated for <strong>Ankita Jagdeep</strong></span>
+        <span id="updatedLabel"></span>
+        <span class="data-source" id="dataSourceLabel"></span>
+      </div>
+    </header>
+
+    <!-- View: home / Digestion project -->
+    <section class="view" id="view-home" aria-label="Projects">
+      <article class="project-card">
+        <div class="row" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:flex-start">
+          <div>
+            <span class="badge" id="homeProjectBadge">Project</span>
+            <h2 id="homeProjectTitle" style="margin-top:10px">Digestion</h2>
+            <p id="homeProjectDesc"></p>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" id="enterDigestion">Open Digestion</button>
+      </article>
+    </section>
+
+    <!-- View: Digestion topics -->
+    <section class="view" id="view-topics" aria-label="Digestion topics">
+      <div class="topic-grid" id="topicGrid"></div>
+    </section>
+
+    <!-- View: coming soon stub -->
+    <section class="view" id="view-soon" aria-label="Coming soon">
+      <div class="soon-panel">
+        <span class="badge soon">Coming soon</span>
+        <h2 id="soonTitle" style="font-family:var(--serif);margin:12px 0 8px;font-size:1.25rem"></h2>
+        <p id="soonDesc" style="margin:0 0 16px"></p>
+        <button type="button" class="btn btn-secondary" id="soonBack">← Back to Digestion topics</button>
+      </div>
+    </section>
+
+    <!-- View: Indian Medical Knowledge library -->
+    <section class="view" id="view-library" aria-label="Source library">
+      <div class="layout">
+        <aside class="filters" aria-label="Filter by type">
+          <h2 class="filter-title">Filter by type</h2>
+          <p class="filter-hint">Uniform types — texts, institutions, people, plants, transfer, methods.</p>
+          <div class="chip-list" id="categoryChips"></div>
+        </aside>
+        <main>
+          <div class="toolbar">
+            <div class="search-wrap">
+              <span class="icon" aria-hidden="true">⌕</span>
+              <label for="q" style="position:absolute;left:-9999px">Search</label>
+              <input id="q" type="search" placeholder="Search title, author, notes, tags…" autocomplete="off" />
+            </div>
+            <div class="toolbar-actions">
+              <div class="result-meta" id="resultMeta"></div>
+              <a class="btn btn-add" id="addSourceBtn"
+                 href="https://github.com/ankita-jagdeep123/digestion-research-library/issues/new?template=add_source.yml"
+                 target="_blank" rel="noopener noreferrer"
+                 title="Opens GitHub Issue form — Action appends to library.json">Add source</a>
+            </div>
+          </div>
+          <div class="cards" id="cards"></div>
+          <div class="empty" id="empty" hidden>No sources match. Try another type filter or clear the search.</div>
+        </main>
+      </div>
+    </section>
+
+    <footer>
+      Digestion → topics → uniform source types. Live on GitHub Pages.
+      Add sources via the <strong>Add source</strong> button (GitHub Issue form) — see <code>docs/ADD-SOURCE.md</code>.
+      Vanilla HTML/CSS/JS; no build step.
+    </footer>
+  </div>
+
+  <script>
+  window.LIBRARY_FALLBACK = {"meta":{"title":"Infinity Foundation — Research Library (Demo)","owner":"Ankita Jagdeep","org":"Infinity Foundation","updated":"2026-10-06","description":"Browse Digestion → Indian Medical Knowledge → filter by uniform source types. Demo catalog for OneDrive / static hosting."},"hierarchy":{"project":{"id":"digestion","title":"Digestion","subtitle":"Main book / research project","description":"Working library for Digestion: sources gathered under thematic topics. Start with Indian Medical Knowledge; other Digestion strands will appear here as they come online."},"topics":[{"id":"indian-medical-knowledge","title":"Indian Medical Knowledge","status":"active","description":"Hortus Malabaricus, Wellcome / Paira Mall collecting, credit and transfer, plants and people — filtered by uniform source types (not mixed book titles vs. persons)."},{"id":"arts","title":"Arts","status":"coming-soon","description":"Placeholder for Digestion work on arts. Sources will appear here later."},{"id":"dance","title":"Dance","status":"coming-soon","description":"Placeholder for Digestion work on dance. Sources will appear here later."}]},"categories":["Primary texts & treatises","Institutions & archives","People & case studies","Plants & remedies","Colonial transfer & credit","Method notes"],"sources":[{"id":"mohan-ram-2005","title":"On the English edition of Van Rheede’s Hortus Malabaricus by K.S. Manilal (2003)","author":"H. Y. Mohan Ram","year":2005,"type":"pdf","category":"Primary texts & treatises","tags":["review","Current Science","Manilal","English edition"],"note":"Authoritative Current Science review of Manilal’s 12-volume English Hortus — useful orientation for non-specialists.","status":"Public PDF","pdfUrl":"https://www.currentscience.ac.in/Volumes/89/10/1672.pdf","originalUrl":"https://www.currentscience.ac.in/Volumes/89/10/1672.pdf","waybackUrl":null,"topicId":"indian-medical-knowledge"},{"id":"manilal-itty-2003","title":"A Study on the Role of Itty Achuden in the Compilation of Hortus Malabaricus","author":"K. S. Manilal","year":2003,"type":"local-pdf","category":"People & case studies","tags":["Itty Achuden","Ezhava","socio-cultural","Internet Archive","local copy"],"note":"Chapter (pp. 41–75) from Hortus Malabaricus and the Socio-Cultural Heritage of India. Local copy of the Internet Archive PDF (item manilal2003 / manilal2.pdf); Original URL opens the IA item page.","status":"Local archive PDF","pdfUrl":"PDFs/manilal-itty-achuden-chapter.pdf","originalUrl":"https://archive.org/details/manilal2003","waybackUrl":null,"topicId":"indian-medical-knowledge"},{"id":"bhl-hortus-latin","title":"Hortus Indicus Malabaricus (Latin original) — Biodiversity Heritage Library","author":"Hendrik van Rheede et al.","year":1678,"type":"web","category":"Primary texts & treatises","tags":["BHL","Latin","public domain","plates"],"note":"BHL bibliography hub for the Latin Hortus volumes with page-level viewing and PDF generation. Prefer this over fragile third-party mirrors.","status":"Catalogue / viewer","pdfUrl":"https://www.biodiversitylibrary.org/bibliography/707","originalUrl":"https://www.biodiversitylibrary.org/bibliography/707","waybackUrl":null,"topicId":"indian-medical-knowledge"},{"id":"ia-hortus-vol1","title":"Hortus Indicus Malabaricus — Volume 1 (Internet Archive)","author":"Hendrik van Rheede","year":1678,"type":"pdf","category":"Primary texts & treatises","tags":["Volume 1","Internet Archive","public domain","Latin"],"note":"Stable public-domain scan of Vol. 1. Good fallback when Rainforest Initiative volume links break.","status":"Public PDF","pdfUrl":"https://archive.org/download/Hortus_Indicus_Malabaricus_Volume1/Hortus_Indicus_Malabaricus_Volume1.pdf","originalUrl":"https://archive.org/details/Hortus_Indicus_Malabaricus_Volume1","waybackUrl":null,"topicId":"indian-medical-knowledge"},{"id":"rainforest-hortus-index","title":"Rainforest Initiative — Hortus volumes index (stamped archive)","author":"The Rainforest Initiative","year":2020,"type":"local-pdf","category":"Primary texts & treatises","tags":["volume index","downloads","mirror caution"],"note":"Landing page for vols 1–12. Direct host PDFs were unstable in Oct 2026 checks — use BHL/IA for reading copies; keep this stamp for discovery notes.","status":"Local archive PDF","pdfUrl":"PDFs/rainforest-initiative-hortus-landing.pdf","originalUrl":"https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede","waybackUrl":null,"topicId":"indian-medical-knowledge"},{"id":"hindu-itty-memorial","title":"Memorial to man behind Hortus withers away","author":"The Hindu (Kochi)","year":2013,"type":"local-pdf","category":"People & case studies","tags":["Itty Achuden","kuriala","Cherthala","memorial","paywall risk"],"note":"News report on the deteriorating Itty Achuthan memorial. Live page may be paywalled — open Wayback for full text; local PDF is a stamped research summary.","status":"Local archive PDF","pdfUrl":"PDFs/the-hindu-itty-achuden-memorial-2013.pdf","originalUrl":"https://www.thehindu.com/news/cities/Kochi/Memorial-to-man-behind-Hortus-withers-away/article12352475.ece","waybackUrl":"https://web.archive.org/web/20220706005334/https://www.thehindu.com/news/cities/Kochi/Memorial-to-man-behind-Hortus-withers-away/article12352475.ece","topicId":"indian-medical-knowledge"},{"id":"wellcome-paira-mall","title":"Paira Mall collecting papers (diaries, accounts, notebooks)","author":"Wellcome Collection catalogue","year":1921,"type":"local-pdf","category":"Institutions & archives","tags":["WA/HMM/CM/Pai","collecting agent","manuscripts","India"],"note":"WHMM collecting-agent papers, 1911–1921. Local stamped PDF from the live catalogue page for offline browsing.","status":"Local archive PDF","pdfUrl":"PDFs/wellcome-paira-mall-catalogue.pdf","originalUrl":"https://wellcomecollection.org/works/cckrgza8","waybackUrl":null,"topicId":"indian-medical-knowledge"},{"id":"wellcome-paira-corr","title":"Paira Mall correspondence with C.J.S. Thompson","author":"Wellcome Collection catalogue","year":1924,"type":"local-pdf","category":"Institutions & archives","tags":["WA/HMM/CO/Ear","correspondence","expenses","Thompson"],"note":"Fifteen correspondence/expense files (1910–1924) documenting Mall’s travels and collecting for Wellcome.","status":"Local archive PDF","pdfUrl":"PDFs/wellcome-paira-mall-correspondence.pdf","originalUrl":"https://wellcomecollection.org/works/e6phtu5h","waybackUrl":null,"topicId":"indian-medical-knowledge"},{"id":"wellcome-manilal-holding","title":"Manilal English Hortus (2003) — Wellcome Library holding","author":"K. S. Manilal / University of Kerala","year":2003,"type":"local-pdf","category":"Institutions & archives","tags":["English edition","Wellcome holding","12 volumes","catalogue"],"note":"Catalogue record for Wellcome’s open-shelf set of Manilal’s English annotated Hortus (vols 1–12).","status":"Local archive PDF","pdfUrl":"PDFs/wellcome-manilal-hortus-english-2003.pdf","originalUrl":"https://wellcomecollection.org/works/zknfheed","waybackUrl":null,"topicId":"indian-medical-knowledge"},{"id":"mpiwg-menon-2023","title":"Hortus Indicus Malabaricus: The Eurasian Life of a Seventeenth-Century “European” Botanical Classic","author":"Minakshi Menon (MPIWG)","year":2023,"type":"web","category":"Colonial transfer & credit","tags":["MPIWG","visual culture","Ezhava","Itty Acchudan","VOC"],"note":"Feature essay on Malabaricus as Dutch colonial knowledge-making and as contested cultural property in Kerala today.","status":"Web essay","pdfUrl":"https://www.mpiwg-berlin.mpg.de/feature-story/malabaricus-botanical-seventeenth-century","originalUrl":"https://www.mpiwg-berlin.mpg.de/feature-story/malabaricus-botanical-seventeenth-century","waybackUrl":null,"topicId":"indian-medical-knowledge"},{"id":"wire-manilal-2018","title":"A Kerala Botanist’s Affair With an Unlikely 17th Century Book","author":"Akshai Jain (The Wire Science)","year":2018,"type":"web","category":"People & case studies","tags":["Manilal","biography","Itty Achuden","translation"],"note":"Long-form profile of K.S. Manilal’s decades with Hortus — caste, translation, and IP themes in accessible prose.","status":"Web article","pdfUrl":"https://science.thewire.in/culture/books/hortus-malabaricus-van-rheede-ks-manilal-botany-itty-achuden/","originalUrl":"https://science.thewire.in/culture/books/hortus-malabaricus-van-rheede-ks-manilal-botany-itty-achuden/","waybackUrl":null,"topicId":"indian-medical-knowledge"},{"id":"method-url-to-pdf","title":"Method note: Stamping a URL into a research PDF (page-1 provenance)","author":"Infinity Foundation — library practice","year":2026,"type":"local-pdf","category":"Method notes","tags":["workflow","OneDrive","archive stamp","how-to"],"note":"Explains the page-1 URL stamp pattern used for Wellcome/Hindu web sources. Pair with HOW-TO.md.","status":"Local archive PDF","pdfUrl":"PDFs/method-url-to-pdf-stamp.pdf","originalUrl":null,"waybackUrl":null,"topicId":"indian-medical-knowledge"}]};
+  </script>
+  <script>
+  (function () {
+    const state = {
+      data: null,
+      view: "home",       // home | topics | soon | library
+      soonTopic: null,
+      category: "All",
+      query: "",
+      sourceLabel: ""
+    };
+
+    const $ = (id) => document.getElementById(id);
+
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function normalize(s) { return (s || "").toString().toLowerCase(); }
+
+    function project() {
+      return (state.data.hierarchy && state.data.hierarchy.project) || {
+        id: "digestion", title: "Digestion", description: ""
+      };
+    }
+
+    function topics() {
+      return (state.data.hierarchy && state.data.hierarchy.topics) || [];
+    }
+
+    function topicById(id) {
+      return topics().find((t) => t.id === id);
+    }
+
+    function activeTopicSources() {
+      return (state.data.sources || []).filter(
+        (s) => s.topicId === "indian-medical-knowledge"
+      );
+    }
+
+    function matchesQuery(item, q) {
+      if (!q) return true;
+      const hay = [
+        item.title, item.author, item.note, item.status, item.category,
+        (item.tags || []).join(" "), String(item.year || "")
+      ].map(normalize).join(" ");
+      return q.split(/\s+/).filter(Boolean).every((tok) => hay.includes(tok));
+    }
+
+    function filtered() {
+      const q = normalize(state.query);
+      return activeTopicSources().filter((item) => {
+        const catOk = state.category === "All" || item.category === state.category;
+        return catOk && matchesQuery(item, q);
+      });
+    }
+
+    function countByCategory() {
+      const all = activeTopicSources();
+      const counts = { All: all.length };
+      (state.data.categories || []).forEach((c) => { counts[c] = 0; });
+      all.forEach((s) => { counts[s.category] = (counts[s.category] || 0) + 1; });
+      return counts;
+    }
+
+    function showView(name) {
+      state.view = name;
+      ["home", "topics", "soon", "library"].forEach((v) => {
+        $("view-" + v).classList.toggle("active", v === name);
+      });
+      renderChrome();
+      if (name === "library") {
+        renderChips();
+        renderCards();
+      }
+      if (name === "topics") renderTopics();
+      if (name === "soon") renderSoon();
+      if (name === "home") renderHome();
+    }
+
+    function renderChrome() {
+      const proj = project();
+      const crumbs = $("crumbs");
+      const parts = [];
+      const addBtn = (label, fn) => {
+        parts.push('<button type="button" data-nav="' + label + '">' + escapeHtml(label) + "</button>");
+      };
+
+      crumbs.innerHTML = "";
+      if (state.view === "home") {
+        crumbs.innerHTML = '<span class="here">Library</span>';
+        $("pageTitle").textContent = "Research Library";
+        $("pageLede").textContent =
+          "Browse by project, then topic, then uniform source types. Open a PDF when you need the file.";
+      } else if (state.view === "topics") {
+        crumbs.innerHTML =
+          '<button type="button" id="crumbHome">Library</button>' +
+          '<span class="sep">/</span><span class="here">' + escapeHtml(proj.title) + "</span>";
+        $("crumbHome").onclick = () => showView("home");
+        $("pageTitle").textContent = proj.title;
+        $("pageLede").textContent = proj.description || "";
+      } else if (state.view === "soon") {
+        const t = state.soonTopic || {};
+        crumbs.innerHTML =
+          '<button type="button" id="crumbHome">Library</button>' +
+          '<span class="sep">/</span><button type="button" id="crumbDig">' + escapeHtml(proj.title) + "</button>" +
+          '<span class="sep">/</span><span class="here">' + escapeHtml(t.title || "") + "</span>";
+        $("crumbHome").onclick = () => showView("home");
+        $("crumbDig").onclick = () => showView("topics");
+        $("pageTitle").textContent = t.title || "Coming soon";
+        $("pageLede").textContent = "This Digestion subtopic is reserved for later.";
+      } else if (state.view === "library") {
+        const t = topicById("indian-medical-knowledge") || { title: "Indian Medical Knowledge" };
+        crumbs.innerHTML =
+          '<button type="button" id="crumbHome">Library</button>' +
+          '<span class="sep">/</span><button type="button" id="crumbDig">' + escapeHtml(proj.title) + "</button>" +
+          '<span class="sep">/</span><span class="here">' + escapeHtml(t.title) + "</span>";
+        $("crumbHome").onclick = () => showView("home");
+        $("crumbDig").onclick = () => showView("topics");
+        $("pageTitle").textContent = t.title;
+        $("pageLede").textContent = t.description || "";
+      }
+
+      $("dataSourceLabel").innerHTML = "Data: <strong>" + escapeHtml(state.sourceLabel) + "</strong>";
+      if (state.data.meta && state.data.meta.updated) {
+        $("updatedLabel").textContent = "Updated " + state.data.meta.updated;
+      }
+    }
+
+    function renderHome() {
+      const proj = project();
+      $("homeProjectTitle").textContent = proj.title;
+      $("homeProjectDesc").textContent = proj.description || proj.subtitle || "";
+      $("homeProjectBadge").textContent = proj.subtitle || "Main project";
+    }
+
+    function renderTopics() {
+      const grid = $("topicGrid");
+      grid.innerHTML = "";
+      topics().forEach((t) => {
+        const active = t.status === "active";
+        const card = document.createElement("article");
+        card.className = "topic-card" + (active ? " span-full" : " disabled");
+        const badge = active
+          ? '<span class="badge">Active</span>'
+          : '<span class="badge soon">Coming soon</span>';
+        const action = active
+          ? '<button type="button" class="btn btn-primary" data-open="' + t.id + '">Browse sources</button>'
+          : '<button type="button" class="btn btn-secondary" data-soon="' + t.id + '">View placeholder</button>';
+        card.innerHTML =
+          '<div class="row">' + badge + "</div>" +
+          "<h2>" + escapeHtml(t.title) + "</h2>" +
+          "<p>" + escapeHtml(t.description || "") + "</p>" +
+          action;
+        grid.appendChild(card);
+      });
+      grid.querySelectorAll("[data-open]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          state.category = "All";
+          state.query = "";
+          $("q").value = "";
+          showView("library");
+        });
+      });
+      grid.querySelectorAll("[data-soon]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          state.soonTopic = topicById(btn.getAttribute("data-soon"));
+          showView("soon");
+        });
+      });
+    }
+
+    function renderSoon() {
+      const t = state.soonTopic || {};
+      $("soonTitle").textContent = t.title || "Coming soon";
+      $("soonDesc").textContent = t.description || "Sources for this Digestion strand will be added later.";
+    }
+
+    function renderChips() {
+      const counts = countByCategory();
+      const cats = ["All"].concat(state.data.categories || []);
+      const box = $("categoryChips");
+      box.innerHTML = "";
+      cats.forEach((cat) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "chip" + (state.category === cat ? " active" : "");
+        btn.setAttribute("aria-pressed", state.category === cat ? "true" : "false");
+        btn.innerHTML = escapeHtml(cat) + '<span class="count">(' + (counts[cat] || 0) + ")</span>";
+        btn.addEventListener("click", () => {
+          state.category = cat;
+          renderChips();
+          renderCards();
+        });
+        box.appendChild(btn);
+      });
+    }
+
+    function linkBtn(href, label, primary) {
+      if (!href) return "";
+      const cls = primary ? "btn btn-primary" : "btn btn-secondary";
+      return '<a class="' + cls + '" href="' + href + '" target="_blank" rel="noopener noreferrer">' +
+        escapeHtml(label) + "</a>";
+    }
+
+    function renderCards() {
+      const items = filtered();
+      $("resultMeta").textContent = items.length + " source" + (items.length === 1 ? "" : "s");
+      const box = $("cards");
+      const empty = $("empty");
+      box.innerHTML = "";
+      if (!items.length) {
+        empty.hidden = false;
+        return;
+      }
+      empty.hidden = true;
+      items.forEach((item) => {
+        const tags = (item.tags || []).map((t) => '<span class="tag">' + escapeHtml(t) + "</span>").join("");
+        const by = [item.author, item.year].filter(Boolean).join(" · ");
+        const el = document.createElement("article");
+        el.className = "card";
+        el.innerHTML =
+          '<div class="card-top">' +
+            "<h2>" + escapeHtml(item.title) + "</h2>" +
+            '<span class="badge">' + escapeHtml(item.status || item.type || "Source") + "</span>" +
+          "</div>" +
+          '<div class="byline">' + escapeHtml(by) + "</div>" +
+          '<p class="note">' + escapeHtml(item.note || "") + "</p>" +
+          '<div class="tags"><span class="cat-pill">' + escapeHtml(item.category) + "</span>" + tags + "</div>" +
+          '<div class="actions">' +
+            linkBtn(item.pdfUrl, "Open PDF", true) +
+            linkBtn(item.originalUrl, "Original URL", false) +
+            linkBtn(item.waybackUrl, "Wayback", false) +
+          "</div>";
+        box.appendChild(el);
+      });
+    }
+
+    $("enterDigestion").addEventListener("click", () => showView("topics"));
+    $("soonBack").addEventListener("click", () => showView("topics"));
+    $("q").addEventListener("input", (e) => {
+      state.query = e.target.value;
+      renderCards();
+      renderChips();
+    });
+
+    function boot(data, label) {
+      state.data = data;
+      state.sourceLabel = label;
+      showView("home");
+    }
+
+    fetch("library.json", { cache: "no-store" })
+      .then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+      .then((data) => boot(data, "library.json"))
+      .catch(() => boot(window.LIBRARY_FALLBACK, "embedded fallback"));
+  })();
+  </script>
+</body>
+</html>

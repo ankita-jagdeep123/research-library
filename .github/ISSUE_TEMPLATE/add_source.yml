@@ -1,0 +1,110 @@
+name: Add source
+description: Add a new source to the Digestion research library (appends to library.json via GitHub Action).
+title: "[Source] "
+labels: ["add-source"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill this form to add a source under **Digestion → Indian Medical Knowledge** (or another topic).
+        An Action will append it to `library.json`, commit to `main`, and update GitHub Pages.
+        Use a public PDF URL or a OneDrive **Anyone with the link → Can view** link in `pdfUrl`. Do not paste secrets.
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Source title (as it should appear on the card).
+      placeholder: Memorial to man behind Hortus withers away
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Author
+      description: Author, editor, or catalogue credit.
+      placeholder: The Hindu (Kochi)
+    validations:
+      required: true
+  - type: input
+    id: year
+    attributes:
+      label: Year
+      description: Publication or catalogue year (integer). Use 0 if unknown.
+      placeholder: "2013"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Uniform type (must match filter chips).
+      options:
+        - Primary texts & treatises
+        - Institutions & archives
+        - People & case studies
+        - Plants & remedies
+        - Colonial transfer & credit
+        - Method notes
+    validations:
+      required: true
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Topic
+      description: Digestion topic id.
+      options:
+        - indian-medical-knowledge
+        - arts
+        - dance
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Comma-separated tags.
+      placeholder: Itty Achuden, memorial, paywall risk
+    validations:
+      required: false
+  - type: textarea
+    id: note
+    attributes:
+      label: Note
+      description: Short card note (why this source matters).
+      placeholder: News report on the memorial. Prefer Wayback if paywalled.
+    validations:
+      required: false
+  - type: input
+    id: pdfUrl
+    attributes:
+      label: PDF / view URL (pdfUrl)
+      description: Public https PDF, catalogue viewer, or OneDrive view link. Private OneDrive files stay as view links — do not commit private files or secrets.
+      placeholder: https://... or PDFs/example.pdf
+    validations:
+      required: true
+  - type: input
+    id: originalUrl
+    attributes:
+      label: Original URL
+      description: Canonical live page (optional).
+      placeholder: https://...
+    validations:
+      required: false
+  - type: input
+    id: waybackUrl
+    attributes:
+      label: Wayback URL
+      description: Internet Archive snapshot if the live page may vanish or paywall (optional).
+      placeholder: https://web.archive.org/web/...
+    validations:
+      required: false
+  - type: input
+    id: status
+    attributes:
+      label: Status
+      description: Short badge text (e.g. Public PDF, Local archive PDF, Web essay, OneDrive view link).
+      placeholder: Public PDF
+      value: Public PDF
+    validations:
+      required: true

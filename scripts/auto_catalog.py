@@ -122,6 +122,12 @@ def category_from_filename(stem: str, category_keywords: dict[str, list[str]], d
     return best if best_hits > 0 and best else default
 
 
+JUNK_TAGS = {
+    "pdf", "record", "page", "archive", "scan", "plates", "article", "faq", "catalogue",
+    "history", "medicine", "india", "science", "research", "document", "local copy",
+}
+
+
 def tags_from_filename(stem: str, filename_keywords: dict[str, list[str]]) -> list[str]:
     lower = stem.lower()
     tags: list[str] = []
@@ -132,8 +138,9 @@ def tags_from_filename(stem: str, filename_keywords: dict[str, list[str]]) -> li
                 if t.lower() not in seen:
                     tags.append(t)
                     seen.add(t.lower())
-    # cleaned tokens from stem
-    for tok in TOKEN_SPLIT_RE.split(stem):
+    # Filename tokens are NOT used as tags any more (they produced junk such as
+    # "Wipo", "Magazine"). Only curated filename_keywords from tag-rules.json apply.
+    for tok in ([] if True else TOKEN_SPLIT_RE.split(stem)):
         if not tok:
             continue
         if YEAR_RE.fullmatch(tok):
@@ -227,6 +234,10 @@ def catalog_one(
         "note": None,
         "status": "live",
         "pdfUrl": rel_url,
+        # OneDrive is the home of every PDF. The sync routine fills onedriveShareUrl
+        # (view-only anonymous link); the site's "Open PDF" prefers it over pdfUrl.
+        "onedrivePath": "Documents/Research Library Demo/" + rel_url,
+        "onedriveShareUrl": None,
         "originalUrl": None,
         "waybackUrl": None,
         "topicId": topic_id,
@@ -319,7 +330,12 @@ def call_openai_enrich(entry: dict, pdf_text: str | None, categories: list[str])
         'Schema: {"title": string, "author": string|null, "year": int|null, '
         '"category": string, "tags": string[], "note": string|null}. '
         f"category MUST be exactly one of: {cats}. "
-        "tags: 3–8 short strings."
+        "tags: 3–6 meaningful subject keywords a historian would search for "
+        "(people, places, plants, institutions, concepts, e.g. 'Paira Mall', 'chaulmoogra oil', "
+        "'biopiracy', 'Ayurveda'). Proper capitalisation. NEVER use: words copied from the "
+        "filename or URL, publisher/website names alone, document-format words "
+        "(pdf, record, page, archive, scan, plates, article, faq, catalogue), years, "
+        "single generic words (history, medicine, India, science, research), or duplicates."
     )
     user = (
         f"Rule-based draft:\n{json.dumps(entry, ensure_ascii=False)}\n\n"
@@ -413,7 +429,9 @@ def enrich_with_ai(entry: dict, pdf_path: Path, categories: list[str]) -> bool:
         if isinstance(note, str) and note.strip():
             entry["note"] = note.strip()
 
-        entry["tags"] = merge_tags(entry.get("tags") or [], ai.get("tags"))
+        ai_tags = ai.get("tags") if isinstance(ai.get("tags"), list) else []
+        ai_tags = [t for t in ai_tags if isinstance(t, str) and t.strip().lower() not in JUNK_TAGS]
+        entry["tags"] = merge_tags(entry.get("tags") or [], ai_tags)
         return True
     except Exception as exc:  # noqa: BLE001 — never fail the whole run
         print(f"  AI enrich unexpected error for {entry.get('id')}: {exc}", file=sys.stderr)

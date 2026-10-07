@@ -199,3 +199,18 @@ Three ways to refresh the catalog immediately for PDFs already in the repo:
 3. **Issue form** — [Sync now](https://github.com/ankita-jagdeep123/research-library/issues/new?template=sync_now.yml) (`[Sync] Refresh catalog` / label `sync-now`) runs auto-catalog, comments, and closes.
 
 OneDrive-only new files (not yet pushed to GitHub) still need the weekday ~7am bot sync, or message Ankita's Bot “sync now”.
+
+## 12. "Open PDF" = OneDrive view-only link
+
+Every catalog row carries:
+
+- `onedrivePath` — where the PDF lives in OneDrive (`Documents/Research Library Demo/...`).
+- `onedriveShareUrl` — OneDrive **Anyone with the link → Can view** link. When set, the site's **Open PDF** button uses it; otherwise it falls back to `pdfUrl`.
+- `originalUrl` — the original source page (e.g. the Wellcome work page).
+- `seriesId` + `sequence` (optional) — keeps multi-volume works (e.g. Hortus Malabaricus vols 1–12) adjacent and in order.
+
+New PDFs: `auto_catalog.py` writes `onedrivePath` and leaves `onedriveShareUrl` empty; the sync routine creates the view-only link and fills it in. To do it by hand: OneDrive → right-click the PDF → Share → "Anyone with the link" + "Can view" → Copy link → paste into `onedriveShareUrl` in `library.json` on GitHub.
+
+Large scans (>~50 MB) live only in OneDrive `Research Library Demo/Large scans (OneDrive only)/` — outside `PDFs/`, so they are never copied into the repo.
+
+Tags: 3–6 meaningful subject keywords (people, places, plants, institutions, concepts). No filename words, format words (pdf, scan, plates, record), years or website names.

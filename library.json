@@ -51,17 +51,319 @@
       "type": "pdf",
       "category": "Primary texts & treatises",
       "tags": [
-        "review",
-        "Current Science",
-        "Manilal",
-        "English edition"
+        "K. S. Manilal",
+        "Hortus Malabaricus",
+        "English edition",
+        "Current Science"
       ],
       "note": "Authoritative Current Science review of Manilal’s 12-volume English Hortus — useful orientation for non-specialists.",
       "status": "Public PDF",
       "pdfUrl": "https://www.currentscience.ac.in/Volumes/89/10/1672.pdf",
       "originalUrl": "https://www.currentscience.ac.in/Volumes/89/10/1672.pdf",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
+    },
+    {
+      "id": "hortus-malabaricus-vol-01",
+      "title": "Hortus Indicus Malabaricus, Vol. 1",
+      "author": "Hendrik van Rheede",
+      "year": 1678,
+      "type": "pdf",
+      "category": "Primary texts & treatises",
+      "tags": [
+        "Hortus Malabaricus",
+        "Latin",
+        "Malayalam plant names",
+        "Kerala",
+        "VOC"
+      ],
+      "note": "Scan from The Rainforest Initiative (volume 1 of 12, Amsterdam 1678). Copy kept on OneDrive (Large scans folder, hortus-indicus-malabaricus-vol-01-rainforest-initiative.pdf).",
+      "status": "Volume PDF",
+      "pdfUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-1.pdf",
+      "originalUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-1.pdf",
+      "waybackUrl": null,
+      "topicId": "indian-medical-knowledge",
+      "seriesId": "hortus-malabaricus",
+      "sequence": 1,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-01-rainforest-initiative.pdf",
+      "onedriveShareUrl": null
+    },
+    {
+      "id": "hortus-malabaricus-vol-02",
+      "title": "Hortus Indicus Malabaricus, Vol. 2",
+      "author": "Hendrik van Rheede",
+      "year": 1679,
+      "type": "pdf",
+      "category": "Primary texts & treatises",
+      "tags": [
+        "Hortus Malabaricus",
+        "Latin",
+        "Malayalam plant names",
+        "Kerala",
+        "VOC"
+      ],
+      "note": "Scan from The Rainforest Initiative (volume 2 of 12, Amsterdam 1679). Copy kept on OneDrive (Large scans folder, hortus-indicus-malabaricus-vol-02-rainforest-initiative.pdf).",
+      "status": "Volume PDF",
+      "pdfUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-2.pdf",
+      "originalUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-2.pdf",
+      "waybackUrl": null,
+      "topicId": "indian-medical-knowledge",
+      "seriesId": "hortus-malabaricus",
+      "sequence": 2,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-02-rainforest-initiative.pdf",
+      "onedriveShareUrl": null
+    },
+    {
+      "id": "hortus-malabaricus-vol-03",
+      "title": "Hortus Indicus Malabaricus, Vol. 3",
+      "author": "Hendrik van Rheede",
+      "year": 1682,
+      "type": "pdf",
+      "category": "Primary texts & treatises",
+      "tags": [
+        "Hortus Malabaricus",
+        "Latin",
+        "Malayalam plant names",
+        "Kerala",
+        "VOC"
+      ],
+      "note": "Scan from The Rainforest Initiative (volume 3 of 12, Amsterdam 1682). Copy kept on OneDrive (Large scans folder, hortus-indicus-malabaricus-vol-03-rainforest-initiative.pdf).",
+      "status": "Volume PDF",
+      "pdfUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-3.pdf",
+      "originalUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-3.pdf",
+      "waybackUrl": null,
+      "topicId": "indian-medical-knowledge",
+      "seriesId": "hortus-malabaricus",
+      "sequence": 3,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-03-rainforest-initiative.pdf",
+      "onedriveShareUrl": null
+    },
+    {
+      "id": "hortus-malabaricus-vol-04",
+      "title": "Hortus Indicus Malabaricus, Vol. 4",
+      "author": "Hendrik van Rheede",
+      "year": 1683,
+      "type": "pdf",
+      "category": "Primary texts & treatises",
+      "tags": [
+        "Hortus Malabaricus",
+        "Latin",
+        "Malayalam plant names",
+        "Kerala",
+        "VOC"
+      ],
+      "note": "Scan from The Rainforest Initiative (volume 4 of 12, Amsterdam 1683). Copy kept on OneDrive (Large scans folder, hortus-indicus-malabaricus-vol-04-rainforest-initiative.pdf).",
+      "status": "Volume PDF",
+      "pdfUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-4.pdf",
+      "originalUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-4.pdf",
+      "waybackUrl": null,
+      "topicId": "indian-medical-knowledge",
+      "seriesId": "hortus-malabaricus",
+      "sequence": 4,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-04-rainforest-initiative.pdf",
+      "onedriveShareUrl": null
+    },
+    {
+      "id": "hortus-malabaricus-vol-05",
+      "title": "Hortus Indicus Malabaricus, Vol. 5",
+      "author": "Hendrik van Rheede",
+      "year": 1685,
+      "type": "pdf",
+      "category": "Primary texts & treatises",
+      "tags": [
+        "Hortus Malabaricus",
+        "Latin",
+        "Malayalam plant names",
+        "Kerala",
+        "VOC"
+      ],
+      "note": "Scan from The Rainforest Initiative (volume 5 of 12, Amsterdam 1685). Copy kept on OneDrive (Large scans folder, hortus-indicus-malabaricus-vol-05-rainforest-initiative.pdf).",
+      "status": "Volume PDF",
+      "pdfUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-5.pdf",
+      "originalUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-5.pdf",
+      "waybackUrl": null,
+      "topicId": "indian-medical-knowledge",
+      "seriesId": "hortus-malabaricus",
+      "sequence": 5,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-05-rainforest-initiative.pdf",
+      "onedriveShareUrl": null
+    },
+    {
+      "id": "hortus-malabaricus-vol-06",
+      "title": "Hortus Indicus Malabaricus, Vol. 6",
+      "author": "Hendrik van Rheede",
+      "year": 1686,
+      "type": "pdf",
+      "category": "Primary texts & treatises",
+      "tags": [
+        "Hortus Malabaricus",
+        "Latin",
+        "Malayalam plant names",
+        "Kerala",
+        "VOC"
+      ],
+      "note": "Scan from The Rainforest Initiative (volume 6 of 12, Amsterdam 1686). Copy kept on OneDrive (Large scans folder, hortus-indicus-malabaricus-vol-06-rainforest-initiative.pdf).",
+      "status": "Volume PDF",
+      "pdfUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-6.pdf",
+      "originalUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-6.pdf",
+      "waybackUrl": null,
+      "topicId": "indian-medical-knowledge",
+      "seriesId": "hortus-malabaricus",
+      "sequence": 6,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-06-rainforest-initiative.pdf",
+      "onedriveShareUrl": null
+    },
+    {
+      "id": "hortus-malabaricus-vol-07",
+      "title": "Hortus Indicus Malabaricus, Vol. 7",
+      "author": "Hendrik van Rheede",
+      "year": 1688,
+      "type": "pdf",
+      "category": "Primary texts & treatises",
+      "tags": [
+        "Hortus Malabaricus",
+        "Latin",
+        "Malayalam plant names",
+        "Kerala",
+        "VOC"
+      ],
+      "note": "Scan from The Rainforest Initiative (volume 7 of 12, Amsterdam 1688). Copy kept on OneDrive (Large scans folder, hortus-indicus-malabaricus-vol-07-rainforest-initiative.pdf).",
+      "status": "Volume PDF",
+      "pdfUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-7.pdf",
+      "originalUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-7.pdf",
+      "waybackUrl": null,
+      "topicId": "indian-medical-knowledge",
+      "seriesId": "hortus-malabaricus",
+      "sequence": 7,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-07-rainforest-initiative.pdf",
+      "onedriveShareUrl": null
+    },
+    {
+      "id": "hortus-malabaricus-vol-08",
+      "title": "Hortus Indicus Malabaricus, Vol. 8",
+      "author": "Hendrik van Rheede",
+      "year": 1688,
+      "type": "pdf",
+      "category": "Primary texts & treatises",
+      "tags": [
+        "Hortus Malabaricus",
+        "Latin",
+        "Malayalam plant names",
+        "Kerala",
+        "VOC"
+      ],
+      "note": "Scan from The Rainforest Initiative (volume 8 of 12, Amsterdam 1688). Copy kept on OneDrive (Large scans folder, hortus-indicus-malabaricus-vol-08-rainforest-initiative.pdf).",
+      "status": "Volume PDF",
+      "pdfUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-8.pdf",
+      "originalUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-8.pdf",
+      "waybackUrl": null,
+      "topicId": "indian-medical-knowledge",
+      "seriesId": "hortus-malabaricus",
+      "sequence": 8,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-08-rainforest-initiative.pdf",
+      "onedriveShareUrl": null
+    },
+    {
+      "id": "hortus-malabaricus-vol-09",
+      "title": "Hortus Indicus Malabaricus, Vol. 9",
+      "author": "Hendrik van Rheede",
+      "year": 1689,
+      "type": "pdf",
+      "category": "Primary texts & treatises",
+      "tags": [
+        "Hortus Malabaricus",
+        "Latin",
+        "Malayalam plant names",
+        "Kerala",
+        "VOC"
+      ],
+      "note": "Scan from The Rainforest Initiative (volume 9 of 12, Amsterdam 1689). Copy kept on OneDrive (Large scans folder, hortus-indicus-malabaricus-vol-09-rainforest-initiative.pdf).",
+      "status": "Volume PDF",
+      "pdfUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-9.pdf",
+      "originalUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-9.pdf",
+      "waybackUrl": null,
+      "topicId": "indian-medical-knowledge",
+      "seriesId": "hortus-malabaricus",
+      "sequence": 9,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-09-rainforest-initiative.pdf",
+      "onedriveShareUrl": null
+    },
+    {
+      "id": "hortus-malabaricus-vol-10",
+      "title": "Hortus Indicus Malabaricus, Vol. 10",
+      "author": "Hendrik van Rheede",
+      "year": 1690,
+      "type": "pdf",
+      "category": "Primary texts & treatises",
+      "tags": [
+        "Hortus Malabaricus",
+        "Latin",
+        "Malayalam plant names",
+        "Kerala",
+        "VOC"
+      ],
+      "note": "Scan from The Rainforest Initiative (volume 10 of 12, Amsterdam 1690). Copy kept on OneDrive (Large scans folder, hortus-indicus-malabaricus-vol-10-rainforest-initiative.pdf).",
+      "status": "Volume PDF",
+      "pdfUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-10.pdf",
+      "originalUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-10.pdf",
+      "waybackUrl": null,
+      "topicId": "indian-medical-knowledge",
+      "seriesId": "hortus-malabaricus",
+      "sequence": 10,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-10-rainforest-initiative.pdf",
+      "onedriveShareUrl": null
+    },
+    {
+      "id": "hortus-malabaricus-vol-11",
+      "title": "Hortus Indicus Malabaricus, Vol. 11",
+      "author": "Hendrik van Rheede",
+      "year": 1692,
+      "type": "pdf",
+      "category": "Primary texts & treatises",
+      "tags": [
+        "Hortus Malabaricus",
+        "Latin",
+        "Malayalam plant names",
+        "Kerala",
+        "VOC"
+      ],
+      "note": "Scan from The Rainforest Initiative (volume 11 of 12, Amsterdam 1692). Copy kept on OneDrive (Large scans folder, hortus-indicus-malabaricus-vol-11-rainforest-initiative.pdf).",
+      "status": "Volume PDF",
+      "pdfUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-11.pdf",
+      "originalUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-11.pdf",
+      "waybackUrl": null,
+      "topicId": "indian-medical-knowledge",
+      "seriesId": "hortus-malabaricus",
+      "sequence": 11,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-11-rainforest-initiative.pdf",
+      "onedriveShareUrl": null
+    },
+    {
+      "id": "hortus-malabaricus-vol-12",
+      "title": "Hortus Indicus Malabaricus, Vol. 12",
+      "author": "Hendrik van Rheede",
+      "year": 1703,
+      "type": "pdf",
+      "category": "Primary texts & treatises",
+      "tags": [
+        "Hortus Malabaricus",
+        "Latin",
+        "Malayalam plant names",
+        "Kerala",
+        "VOC"
+      ],
+      "note": "Scan from The Rainforest Initiative (volume 12 of 12, Amsterdam 1703). Copy kept on OneDrive (Large scans folder, hortus-indicus-malabaricus-vol-12-rainforest-initiative.pdf).",
+      "status": "Volume PDF",
+      "pdfUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-12.pdf",
+      "originalUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede?download=flora/rheede/hortus-indicus-malabaricus-12.pdf",
+      "waybackUrl": null,
+      "topicId": "indian-medical-knowledge",
+      "seriesId": "hortus-malabaricus",
+      "sequence": 12,
+      "onedrivePath": "Documents/Research Library Demo/Large scans (OneDrive only)/hortus-indicus-malabaricus-vol-12-rainforest-initiative.pdf",
+      "onedriveShareUrl": null
     },
     {
       "id": "manilal-itty-2003",
@@ -73,75 +375,17 @@
       "tags": [
         "Itty Achuden",
         "Ezhava",
-        "socio-cultural",
-        "Internet Archive",
-        "local copy"
+        "Hortus Malabaricus",
+        "K. S. Manilal"
       ],
       "note": "Chapter (pp. 41–75) from Hortus Malabaricus and the Socio-Cultural Heritage of India. Local copy of the Internet Archive PDF (item manilal2003 / manilal2.pdf); Original URL opens the IA item page.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/People & case studies/manilal-itty-achuden-chapter.pdf",
       "originalUrl": "https://archive.org/details/manilal2003",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
-    },
-    {
-      "id": "bhl-hortus-latin",
-      "title": "Hortus Indicus Malabaricus (Latin original) — Biodiversity Heritage Library",
-      "author": "Hendrik van Rheede et al.",
-      "year": 1678,
-      "type": "web",
-      "category": "Primary texts & treatises",
-      "tags": [
-        "BHL",
-        "Latin",
-        "public domain",
-        "plates"
-      ],
-      "note": "BHL bibliography hub for the Latin Hortus volumes with page-level viewing and PDF generation. Prefer this over fragile third-party mirrors.",
-      "status": "Catalogue / viewer",
-      "pdfUrl": "https://www.biodiversitylibrary.org/bibliography/707",
-      "originalUrl": "https://www.biodiversitylibrary.org/bibliography/707",
-      "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
-    },
-    {
-      "id": "ia-hortus-vol1",
-      "title": "Hortus Indicus Malabaricus — Volume 1 (Internet Archive)",
-      "author": "Hendrik van Rheede",
-      "year": 1678,
-      "type": "pdf",
-      "category": "Primary texts & treatises",
-      "tags": [
-        "Volume 1",
-        "Internet Archive",
-        "public domain",
-        "Latin"
-      ],
-      "note": "Stable public-domain scan of Vol. 1. Good fallback when Rainforest Initiative volume links break.",
-      "status": "Public PDF",
-      "pdfUrl": "https://archive.org/download/Hortus_Indicus_Malabaricus_Volume1/Hortus_Indicus_Malabaricus_Volume1.pdf",
-      "originalUrl": "https://archive.org/details/Hortus_Indicus_Malabaricus_Volume1",
-      "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
-    },
-    {
-      "id": "rainforest-hortus-index",
-      "title": "Rainforest Initiative — Hortus volumes index (stamped archive)",
-      "author": "The Rainforest Initiative",
-      "year": 2020,
-      "type": "local-pdf",
-      "category": "Primary texts & treatises",
-      "tags": [
-        "volume index",
-        "downloads",
-        "mirror caution"
-      ],
-      "note": "Landing page for vols 1–12. Direct host PDFs were unstable in Oct 2026 checks — use BHL/IA for reading copies; keep this stamp for discovery notes.",
-      "status": "Local archive PDF",
-      "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/rainforest-initiative-hortus-landing.pdf",
-      "originalUrl": "https://www.rainforest-initiative.org/hortus-indicus-malabaricus-by-rheede",
-      "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/People & case studies/manilal-itty-achuden-chapter.pdf"
     },
     {
       "id": "hindu-itty-memorial",
@@ -152,17 +396,18 @@
       "category": "People & case studies",
       "tags": [
         "Itty Achuden",
-        "kuriala",
         "Cherthala",
         "memorial",
-        "paywall risk"
+        "Kerala"
       ],
       "note": "News report on the deteriorating Itty Achuthan memorial. Live page may be paywalled — open Wayback for full text; local PDF is a stamped research summary.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/People & case studies/the-hindu-itty-achuden-memorial-2013.pdf",
       "originalUrl": "https://www.thehindu.com/news/cities/Kochi/Memorial-to-man-behind-Hortus-withers-away/article12352475.ece",
       "waybackUrl": "https://web.archive.org/web/20220706005334/https://www.thehindu.com/news/cities/Kochi/Memorial-to-man-behind-Hortus-withers-away/article12352475.ece",
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/People & case studies/the-hindu-itty-achuden-memorial-2013.pdf"
     },
     {
       "id": "wellcome-paira-mall",
@@ -172,17 +417,18 @@
       "type": "local-pdf",
       "category": "Institutions & archives",
       "tags": [
-        "WA/HMM/CM/Pai",
-        "collecting agent",
-        "manuscripts",
-        "India"
+        "Paira Mall",
+        "Wellcome collecting agents",
+        "manuscripts"
       ],
       "note": "WHMM collecting-agent papers, 1911–1921. Local stamped PDF from the live catalogue page for offline browsing.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-paira-mall-catalogue.pdf",
       "originalUrl": "https://wellcomecollection.org/works/cckrgza8",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-paira-mall-catalogue.pdf"
     },
     {
       "id": "wellcome-paira-corr",
@@ -192,17 +438,19 @@
       "type": "local-pdf",
       "category": "Institutions & archives",
       "tags": [
-        "WA/HMM/CO/Ear",
+        "Paira Mall",
+        "C. J. S. Thompson",
         "correspondence",
-        "expenses",
-        "Thompson"
+        "collecting expenses"
       ],
       "note": "Fifteen correspondence/expense files (1910–1924) documenting Mall’s travels and collecting for Wellcome.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-paira-mall-correspondence.pdf",
       "originalUrl": "https://wellcomecollection.org/works/e6phtu5h",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-paira-mall-correspondence.pdf"
     },
     {
       "id": "wellcome-manilal-holding",
@@ -212,17 +460,18 @@
       "type": "local-pdf",
       "category": "Institutions & archives",
       "tags": [
-        "English edition",
-        "Wellcome holding",
-        "12 volumes",
-        "catalogue"
+        "K. S. Manilal",
+        "Hortus Malabaricus",
+        "English edition"
       ],
       "note": "Catalogue record for Wellcome’s open-shelf set of Manilal’s English annotated Hortus (vols 1–12).",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-manilal-hortus-english-2003.pdf",
       "originalUrl": "https://wellcomecollection.org/works/zknfheed",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-manilal-hortus-english-2003.pdf"
     },
     {
       "id": "mpiwg-menon-2023",
@@ -232,18 +481,20 @@
       "type": "web",
       "category": "Colonial transfer & credit",
       "tags": [
-        "MPIWG",
-        "visual culture",
+        "Hortus Malabaricus",
+        "VOC",
         "Ezhava",
-        "Itty Acchudan",
-        "VOC"
+        "Itty Achuden",
+        "visual culture"
       ],
       "note": "Feature essay on Malabaricus as Dutch colonial knowledge-making and as contested cultural property in Kerala today.",
       "status": "Web essay",
       "pdfUrl": "https://www.mpiwg-berlin.mpg.de/feature-story/malabaricus-botanical-seventeenth-century",
       "originalUrl": "https://www.mpiwg-berlin.mpg.de/feature-story/malabaricus-botanical-seventeenth-century",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "id": "wire-manilal-2018",
@@ -253,9 +504,9 @@
       "type": "web",
       "category": "People & case studies",
       "tags": [
-        "Manilal",
-        "biography",
+        "K. S. Manilal",
         "Itty Achuden",
+        "Hortus Malabaricus",
         "translation"
       ],
       "note": "Long-form profile of K.S. Manilal’s decades with Hortus — caste, translation, and IP themes in accessible prose.",
@@ -263,7 +514,9 @@
       "pdfUrl": "https://science.thewire.in/culture/books/hortus-malabaricus-van-rheede-ks-manilal-botany-itty-achuden/",
       "originalUrl": "https://science.thewire.in/culture/books/hortus-malabaricus-van-rheede-ks-manilal-botany-itty-achuden/",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "id": "method-url-to-pdf",
@@ -275,15 +528,16 @@
       "tags": [
         "workflow",
         "OneDrive",
-        "archive stamp",
-        "how-to"
+        "provenance"
       ],
       "note": "Explains the page-1 URL stamp pattern used for Wellcome/Hindu web sources. Pair with HOW-TO.md.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Method notes/method-url-to-pdf-stamp.pdf",
       "originalUrl": null,
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Method notes/method-url-to-pdf-stamp.pdf"
     },
     {
       "id": "apollo-2017-who-owns-heritage-traditional-medicine",
@@ -293,19 +547,19 @@
       "type": "local-pdf",
       "category": "Colonial transfer & credit",
       "tags": [
-        "Apollo",
-        "Who",
-        "Owns",
-        "Heritage",
-        "Traditional",
-        "Medicine"
+        "Paira Mall",
+        "Ayurveda",
+        "Ayurvedic Man exhibition",
+        "traditional knowledge"
       ],
       "note": "Mall told to 'acquire local medical knowledge, too'. Archived page copy.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/apollo-2017-who-owns-heritage-traditional-medicine.pdf",
       "originalUrl": "https://apollo-magazine.com/who-owns-the-heritage-of-traditional-medicine/",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/apollo-2017-who-owns-heritage-traditional-medicine.pdf"
     },
     {
       "id": "art-newspaper-2026-wellcome-returns-jain-manuscripts",
@@ -315,20 +569,19 @@
       "type": "local-pdf",
       "category": "Colonial transfer & credit",
       "tags": [
-        "Wellcome",
-        "archive",
-        "Art",
-        "Newspaper",
-        "Returns",
-        "Jain",
-        "Manuscripts"
+        "Jain manuscripts",
+        "Paira Mall",
+        "restitution",
+        "Wellcome Collection"
       ],
       "note": "14 May 2026; ~5 rupees each; 'against the best interests of their original owners'. Archived page copy.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/art-newspaper-2026-wellcome-returns-jain-manuscripts.pdf",
       "originalUrl": "https://www.theartnewspaper.com/2026/05/14/wellcome-collection-returns-2000-manuscripts-to-the-jain-community",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/art-newspaper-2026-wellcome-returns-jain-manuscripts.pdf"
     },
     {
       "id": "conversation-2022-walsdorf-wellcome-medicine-man",
@@ -338,19 +591,19 @@
       "type": "local-pdf",
       "category": "Colonial transfer & credit",
       "tags": [
-        "Wellcome",
-        "archive",
-        "Conversation",
-        "Walsdorf",
-        "Medicine",
-        "Man"
+        "Henry Wellcome",
+        "Medicine Man exhibition",
+        "Paira Mall",
+        "colonial collecting"
       ],
       "note": "Published 16 Dec 2022. Source of the 1912 'India is completely ransacked' quote (letter from C.J.S. Thompson). Archived page copy.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/conversation-2022-walsdorf-wellcome-medicine-man.pdf",
       "originalUrl": "https://theconversation.com/why-wellcome-closed-its-medicine-man-exhibition-and-others-should-follow-suit-196171",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/conversation-2022-walsdorf-wellcome-medicine-man.pdf"
     },
     {
       "id": "csir-faq-turmeric-patent-tkdl",
@@ -360,18 +613,19 @@
       "type": "local-pdf",
       "category": "Colonial transfer & credit",
       "tags": [
-        "Csir",
-        "Faq",
-        "Turmeric",
-        "Patent",
-        "Tkdl"
+        "turmeric patent",
+        "TKDL",
+        "prior art",
+        "CSIR"
       ],
       "note": "Archived page copy.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/csir-faq-turmeric-patent-tkdl.pdf",
       "originalUrl": "https://www.csir.res.in/en/about-us/faqs?page=3",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/csir-faq-turmeric-patent-tkdl.pdf"
     },
     {
       "id": "elc-aveda-acquisition-1997-faq",
@@ -381,20 +635,18 @@
       "type": "local-pdf",
       "category": "Colonial transfer & credit",
       "tags": [
-        "Elc",
         "Aveda",
-        "Acquisition",
-        "Faq",
         "Estée Lauder",
-        "Investors",
-        "Financial Information"
+        "acquisition"
       ],
       "note": "Acquisitions table lists Aveda Corporation, November 1997. Archived page copy.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/elc-aveda-acquisition-1997-faq.pdf",
       "originalUrl": "https://www.elcompanies.com/en/investors/investor-resources/faqs",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/elc-aveda-acquisition-1997-faq.pdf"
     },
     {
       "id": "tkdl-biopiracy-turmeric-neem",
@@ -404,17 +656,19 @@
       "type": "local-pdf",
       "category": "Colonial transfer & credit",
       "tags": [
-        "Tkdl",
-        "Biopiracy",
-        "Turmeric",
-        "Neem"
+        "biopiracy",
+        "turmeric",
+        "neem",
+        "TKDL"
       ],
       "note": "Archived page copy.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/tkdl-biopiracy-turmeric-neem.pdf",
       "originalUrl": "https://www.tkdl.res.in/tkdl/LangGerman/common/Biopiracy.asp",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/tkdl-biopiracy-turmeric-neem.pdf"
     },
     {
       "id": "wellcome-colonial-roots-of-our-collections",
@@ -424,19 +678,18 @@
       "type": "local-pdf",
       "category": "Colonial transfer & credit",
       "tags": [
-        "Wellcome",
-        "archive",
-        "Colonial",
-        "Roots",
-        "Our",
-        "Collections"
+        "Wellcome Collection",
+        "colonial collecting",
+        "restitution"
       ],
       "note": "Archived page copy.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/wellcome-colonial-roots-of-our-collections.pdf",
       "originalUrl": "https://wellcomecollection.org/about-us/the-colonial-roots-of-our-collections--and-our-response",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/wellcome-colonial-roots-of-our-collections.pdf"
     },
     {
       "id": "wellcome-stories-indian-botanicals-heritage-wars",
@@ -446,20 +699,19 @@
       "type": "local-pdf",
       "category": "Colonial transfer & credit",
       "tags": [
-        "Wellcome",
-        "archive",
-        "Stories",
-        "Indian",
-        "Botanicals",
-        "Heritage",
-        "Wars"
+        "Whitelaw Ainslie",
+        "John Fleming",
+        "colonial materia medica",
+        "Indian botanicals"
       ],
       "note": "Wellcome essay on Fleming, Ainslie and colonial materia medica. Archived page copy.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/wellcome-stories-indian-botanicals-heritage-wars.pdf",
       "originalUrl": "https://wellcomecollection.org/stories/indian-botanicals-and-heritage-wars",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/wellcome-stories-indian-botanicals-heritage-wars.pdf"
     },
     {
       "id": "wipo-magazine-protecting-indias-traditional-knowledge",
@@ -469,19 +721,20 @@
       "type": "local-pdf",
       "category": "Colonial transfer & credit",
       "tags": [
-        "Wipo",
-        "Magazine",
-        "Protecting",
-        "Indias",
-        "Traditional",
-        "Knowledge"
+        "TKDL",
+        "turmeric",
+        "neem",
+        "biopiracy",
+        "WIPO"
       ],
       "note": "Turmeric, neem and the TKDL. Archived page copy.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/wipo-magazine-protecting-indias-traditional-knowledge.pdf",
       "originalUrl": "https://www.wipo.int/en/web/wipo-magazine/articles/protectingindias-traditional-knowledge-37721",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Colonial transfer & credit/wipo-magazine-protecting-indias-traditional-knowledge.pdf"
     },
     {
       "id": "gsk-history-and-heritage",
@@ -491,21 +744,18 @@
       "type": "local-pdf",
       "category": "Institutions & archives",
       "tags": [
-        "Gsk",
-        "History",
-        "And",
-        "Heritage",
-        "Pharmacy",
-        "Vaccines",
-        "Biopharma",
-        "Innovation"
+        "GSK",
+        "Burroughs Wellcome",
+        "corporate history"
       ],
       "note": "Burroughs Wellcome founding and corporate lineage. Archived page copy.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/gsk-history-and-heritage.pdf",
       "originalUrl": "https://www.gsk.com/en-gb/company/history-and-heritage/",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/gsk-history-and-heritage.pdf"
     },
     {
       "id": "wellcome-ayurvedic-man-exhibition-2017",
@@ -515,20 +765,18 @@
       "type": "local-pdf",
       "category": "Institutions & archives",
       "tags": [
-        "Wellcome",
-        "archive",
-        "Ayurvedic",
-        "Man",
-        "Exhibition",
-        "Indian medicine",
-        "cultural items"
+        "Ayurvedic Man exhibition",
+        "Paira Mall",
+        "Wellcome Research Laboratories"
       ],
       "note": "Press release: Mall 'gathered local health knowledge and medicinal plants for the Wellcome Research Laboratories'. Archived page copy.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-ayurvedic-man-exhibition-2017.pdf",
       "originalUrl": "https://wellcomecollection.org/ayurvedic-man--encounters-with-indian-medicine-opens-at-wellcome-collection",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-ayurvedic-man-exhibition-2017.pdf"
     },
     {
       "id": "wellcome-foundation-ltd-archive-wf-record",
@@ -538,21 +786,19 @@
       "type": "local-pdf",
       "category": "Institutions & archives",
       "tags": [
-        "Wellcome",
-        "archive",
-        "Foundation",
-        "Ltd",
-        "Record",
-        "pharmacy",
-        "HIV",
-        "AIDS"
+        "Wellcome Foundation",
+        "GSK",
+        "R&D records",
+        "Burroughs Wellcome"
       ],
       "note": null,
       "status": "live",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-foundation-ltd-archive-WF-record.pdf",
       "originalUrl": null,
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-foundation-ltd-archive-WF-record.pdf"
     },
     {
       "id": "wellcome-history-of-wellcome",
@@ -562,20 +808,19 @@
       "type": "local-pdf",
       "category": "Institutions & archives",
       "tags": [
-        "Wellcome",
-        "archive",
-        "History",
-        "pharmaceutical",
-        "research",
-        "health",
-        "Henry Wellcome"
+        "Henry Wellcome",
+        "Burroughs Wellcome",
+        "indigenous medical knowledge",
+        "GSK"
       ],
       "note": "Says the business 'benefited heavily from indigenous medical knowledge'; Glaxo/GSK lineage. Archived page copy.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-history-of-wellcome.pdf",
       "originalUrl": "https://wellcome.org/who-we-are/history-wellcome",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-history-of-wellcome.pdf"
     },
     {
       "id": "wellcome-paira-mall-early-correspondence-1912",
@@ -585,20 +830,18 @@
       "type": "local-pdf",
       "category": "Institutions & archives",
       "tags": [
-        "Wellcome",
-        "archive",
         "Paira Mall",
-        "correspondence",
-        "Paira",
-        "Mall",
-        "Early"
+        "C. J. S. Thompson",
+        "correspondence"
       ],
       "note": "Catalogue snapshot of one file in WA/HMM/CO/Ear/560–574.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-paira-mall-early-correspondence-1912.pdf",
       "originalUrl": "https://wellcomecollection.org/works/ervknb4k",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Institutions & archives/wellcome-paira-mall-early-correspondence-1912.pdf"
     },
     {
       "id": "cen-2005-emergence-pharmaceutical-industry",
@@ -608,20 +851,18 @@
       "type": "local-pdf",
       "category": "Method notes",
       "tags": [
-        "Cen",
-        "Emergence",
-        "Pharmaceutical",
-        "Industry",
-        "Science",
-        "History",
-        "Research"
+        "pharmaceutical industry",
+        "Merck",
+        "Bayer"
       ],
       "note": "C&EN 83(25). Background on Merck/Bayer-era industry. Archived page copy.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Method notes/cen-2005-emergence-pharmaceutical-industry.pdf",
       "originalUrl": "https://cen.acs.org/articles/83/i25/EMERGENCE-PHARMACEUTICAL-SCIENCE-INDUSTRY-1870.html",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Method notes/cen-2005-emergence-pharmaceutical-industry.pdf"
     },
     {
       "id": "wellcome-larson-2009-infinity-of-things-record",
@@ -631,19 +872,18 @@
       "type": "local-pdf",
       "category": "People & case studies",
       "tags": [
-        "Wellcome",
-        "archive",
-        "Larson",
-        "Infinity",
-        "Things",
-        "Record"
+        "Henry Wellcome",
+        "Frances Larson",
+        "collecting"
       ],
       "note": "Catalogue record (book in copyright).",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/People & case studies/wellcome-larson-2009-infinity-of-things-record.pdf",
       "originalUrl": "https://wellcomecollection.org/works/qchfwrgu",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/People & case studies/wellcome-larson-2009-infinity-of-things-record.pdf"
     },
     {
       "id": "wellcome-stories-ayurvedic-man-curator-interview",
@@ -653,20 +893,19 @@
       "type": "local-pdf",
       "category": "People & case studies",
       "tags": [
-        "Wellcome",
-        "archive",
-        "Stories",
-        "Ayurvedic",
-        "Man",
-        "Curator",
-        "Interview"
+        "Bárbara Rodríguez Muñoz",
+        "Ayurvedic Man exhibition",
+        "Paira Mall",
+        "medicinal plants"
       ],
       "note": "Curator: some collected plants 'were taken to Wellcome's pharmaceutical laboratories to be turned into products'. Archived page copy.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/People & case studies/wellcome-stories-ayurvedic-man-curator-interview.pdf",
       "originalUrl": "https://wellcomecollection.org/stories/inside-the-mind-of-ayurvedic-man-s-curator--b-rbara-rodriguez-mu-oz",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/People & case studies/wellcome-stories-ayurvedic-man-curator-interview.pdf"
     },
     {
       "id": "nlm-parascandola-2003-chaulmoogra-oil-leprosy",
@@ -676,20 +915,18 @@
       "type": "local-pdf",
       "category": "Plants & remedies",
       "tags": [
-        "Nlm",
-        "Parascandola",
-        "Chaulmoogra",
-        "Oil",
-        "Leprosy",
-        "Treatment",
-        "History"
+        "chaulmoogra oil",
+        "leprosy",
+        "Hydnocarpus"
       ],
       "note": "NLM-hosted PDF (Pharmacy in History 45(2)). Copy of the original PDF.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Plants & remedies/nlm-parascandola-2003-chaulmoogra-oil-leprosy.pdf",
       "originalUrl": "https://lhncbc.nlm.nih.gov/LHC-publications/PDF/pub2003048.pdf",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Plants & remedies/nlm-parascandola-2003-chaulmoogra-oil-leprosy.pdf"
     },
     {
       "id": "pmc-dogra-2013-leprosy-path-to-eradication",
@@ -699,22 +936,18 @@
       "type": "local-pdf",
       "category": "Plants & remedies",
       "tags": [
-        "Pmc",
-        "Dogra",
-        "Leprosy",
-        "Path",
-        "Eradication",
-        "Health",
-        "Research",
-        "Immunotherapy",
-        "MDT"
+        "leprosy",
+        "chaulmoogra oil",
+        "multidrug therapy"
       ],
       "note": "Indian J Med Res review; covers chaulmoogra oil era. Archived page copy.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Plants & remedies/pmc-dogra-2013-leprosy-path-to-eradication.pdf",
       "originalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3657879/",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Plants & remedies/pmc-dogra-2013-leprosy-path-to-eradication.pdf"
     },
     {
       "id": "pmc-lobay-2015-rauwolfia-hypertension",
@@ -724,22 +957,19 @@
       "type": "local-pdf",
       "category": "Plants & remedies",
       "tags": [
-        "Pmc",
-        "Lobay",
-        "Rauwolfia",
-        "Hypertension",
-        "Plants",
-        "Medicine",
-        "Pharmacology",
-        "Botany",
-        "Toxicology"
+        "Rauwolfia serpentina",
+        "reserpine",
+        "hypertension",
+        "sarpagandha"
       ],
       "note": "Integrative Medicine review (Rauwolfia → reserpine). Archived page copy.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Plants & remedies/pmc-lobay-2015-rauwolfia-hypertension.pdf",
       "originalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4566472/",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Plants & remedies/pmc-lobay-2015-rauwolfia-hypertension.pdf"
     },
     {
       "id": "pmc-oshaughnessy-indian-hemp-reprint",
@@ -749,20 +979,19 @@
       "type": "local-pdf",
       "category": "Plants & remedies",
       "tags": [
-        "Pmc",
-        "Oshaughnessy",
-        "Indian",
-        "Hemp",
-        "Reprint",
-        "Cannabis",
-        "Medicine"
+        "W. B. O'Shaughnessy",
+        "cannabis",
+        "Indian hemp",
+        "Calcutta"
       ],
       "note": "PMC copy of the 1843 Provincial Medical Journal printing. Archived page copy.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Plants & remedies/pmc-oshaughnessy-indian-hemp-reprint.pdf",
       "originalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2490410/",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Plants & remedies/pmc-oshaughnessy-indian-hemp-reprint.pdf"
     },
     {
       "id": "oshaughnessy-1839-indian-hemp-wellcome-scan",
@@ -772,23 +1001,20 @@
       "type": "local-pdf",
       "category": "Primary texts & treatises",
       "tags": [
-        "Wellcome",
-        "archive",
-        "Oshaughnessy",
-        "1839",
-        "Indian",
-        "Hemp",
-        "Scan",
-        "Cannabis",
+        "W. B. O'Shaughnessy",
+        "cannabis",
         "Indian hemp",
-        "treatment"
+        "tetanus",
+        "Calcutta"
       ],
       "note": "Public-domain Wellcome scan (PDM).",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/oshaughnessy-1839-indian-hemp-wellcome-scan.pdf",
       "originalUrl": "https://wellcomecollection.org/works/yuwk7u76",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/oshaughnessy-1839-indian-hemp-wellcome-scan.pdf"
     },
     {
       "id": "wellcome-ainslie-materia-medica-hindoostan-1813-record",
@@ -798,21 +1024,18 @@
       "type": "local-pdf",
       "category": "Primary texts & treatises",
       "tags": [
-        "Wellcome",
-        "archive",
-        "Ainslie",
-        "Materia",
-        "Medica",
-        "Hindoostan",
-        "1813",
-        "Record"
+        "Whitelaw Ainslie",
+        "materia medica",
+        "Madras"
       ],
       "note": "Catalogue snapshot. Full public-domain scan (~87 MB): https://iiif.wellcomecollection.org/pdf/b28037340",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/wellcome-ainslie-materia-medica-hindoostan-1813-record.pdf",
       "originalUrl": "https://wellcomecollection.org/works/nkuum6j9",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/wellcome-ainslie-materia-medica-hindoostan-1813-record.pdf"
     },
     {
       "id": "wellcome-clusius-aromatum-historia-record",
@@ -822,19 +1045,18 @@
       "type": "local-pdf",
       "category": "Primary texts & treatises",
       "tags": [
-        "Wellcome",
-        "archive",
-        "Clusius",
-        "Aromatum",
-        "Historia",
-        "Record"
+        "Carolus Clusius",
+        "Garcia da Orta",
+        "Latin translation"
       ],
       "note": "Catalogue snapshot. Wellcome marks the scan 'restricted' (view on site only), so no PDF copy.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/wellcome-clusius-aromatum-historia-record.pdf",
       "originalUrl": "https://wellcomecollection.org/works/rwhttyc7",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/wellcome-clusius-aromatum-historia-record.pdf"
     },
     {
       "id": "wellcome-medicine-trade-empire-orta-2015-record",
@@ -844,20 +1066,18 @@
       "type": "local-pdf",
       "category": "Primary texts & treatises",
       "tags": [
-        "Wellcome",
-        "archive",
-        "Medicine",
-        "Trade",
-        "Empire",
-        "Orta",
-        "Record"
+        "Garcia da Orta",
+        "Goa",
+        "Portuguese empire"
       ],
       "note": "Catalogue record for the 2015 edited volume (in copyright, not downloadable).",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/wellcome-medicine-trade-empire-orta-2015-record.pdf",
       "originalUrl": "https://wellcomecollection.org/works/bcwbpz72",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/wellcome-medicine-trade-empire-orta-2015-record.pdf"
     },
     {
       "id": "wellcome-orta-coloquios-1891-record",
@@ -867,30 +1087,25 @@
       "type": "local-pdf",
       "category": "Primary texts & treatises",
       "tags": [
-        "Wellcome",
-        "archive",
-        "Orta",
-        "Coloquios",
-        "1891",
-        "Record",
-        "Portugal",
-        "Botany",
-        "Phytotherapy"
+        "Garcia da Orta",
+        "Goa",
+        "materia medica"
       ],
       "note": "Catalogue snapshot. Full public-domain scans (2 vols, ~80 MB each) open from Wellcome: https://iiif.wellcomecollection.org/pdf/b21297368_0001 and _0002.",
       "status": "Local archive PDF",
       "pdfUrl": "PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/wellcome-orta-coloquios-1891-record.pdf",
       "originalUrl": "https://wellcomecollection.org/works/accmg79d",
       "waybackUrl": null,
-      "topicId": "indian-medical-knowledge"
+      "topicId": "indian-medical-knowledge",
+      "onedriveShareUrl": null,
+      "onedrivePath": "Documents/Research Library Demo/PDFs/Digestion/Indian Medical Knowledge/Primary texts & treatises/wellcome-orta-coloquios-1891-record.pdf"
     },
     {
       "type": "pdf",
       "tags": [
         "Garcia da Orta",
         "Goa",
-        "materia medica",
-        "public domain"
+        "materia medica"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -902,15 +1117,16 @@
       "note": "Public-domain Wellcome scan; too large for the GitHub repo, so the PDF button opens Wellcome's own PDF. Backup copy on OneDrive (Large scans folder).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b21297368_0001",
-      "originalUrl": "https://wellcomecollection.org/works/accmg79d"
+      "originalUrl": "https://wellcomecollection.org/works/accmg79d",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "pdf",
       "tags": [
         "Garcia da Orta",
         "Goa",
-        "materia medica",
-        "public domain"
+        "materia medica"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -922,15 +1138,16 @@
       "note": "Public-domain Wellcome scan; too large for the GitHub repo, so the PDF button opens Wellcome's own PDF. Backup copy on OneDrive (Large scans folder).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b21297368_0002",
-      "originalUrl": "https://wellcomecollection.org/works/accmg79d"
+      "originalUrl": "https://wellcomecollection.org/works/accmg79d",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "pdf",
       "tags": [
-        "Ainslie",
+        "Whitelaw Ainslie",
         "materia medica",
-        "Madras",
-        "public domain"
+        "Madras"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -942,15 +1159,16 @@
       "note": "Public-domain Wellcome scan; too large for the GitHub repo, so the PDF button opens Wellcome's own PDF. Backup copy on OneDrive (Large scans folder).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b28037340",
-      "originalUrl": "https://wellcomecollection.org/works/nkuum6j9"
+      "originalUrl": "https://wellcomecollection.org/works/nkuum6j9",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "pdf",
       "tags": [
         "pharmacopoeia",
         "indigenous drugs",
-        "India Office",
-        "public domain"
+        "colonial standardisation"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -962,16 +1180,15 @@
       "note": "Public-domain Wellcome scan; too large for the GitHub repo, so the PDF button opens Wellcome's own PDF. Kept on the bot box only for now (over 100 MB, too big for automatic OneDrive upload).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b2146604x",
-      "originalUrl": "https://wellcomecollection.org/works/jrxxbk9f"
+      "originalUrl": "https://wellcomecollection.org/works/jrxxbk9f",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "pdf",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "diary",
-        "CC BY"
+        "diary"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -983,16 +1200,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). PDF opens from Wellcome; backup copy on OneDrive (Large scans folder).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18538952",
-      "originalUrl": "https://wellcomecollection.org/works/a42m5sw8"
+      "originalUrl": "https://wellcomecollection.org/works/a42m5sw8",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "pdf",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "account book",
-        "CC BY"
+        "account book"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1004,16 +1220,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). PDF opens from Wellcome; backup copy on OneDrive (Large scans folder).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18474056",
-      "originalUrl": "https://wellcomecollection.org/works/bnze5ac7"
+      "originalUrl": "https://wellcomecollection.org/works/bnze5ac7",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "web",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "diary",
-        "CC BY"
+        "diary"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1025,16 +1240,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). Behind Wellcome's 'accept terms' screen because it may contain personal information; PDF downloaded with approval and kept on OneDrive (Large scans folder, private). The button opens the Wellcome page, where you accept the terms to view it.",
       "status": "Wellcome viewer (terms screen) · OneDrive copy",
       "pdfUrl": "https://wellcomecollection.org/works/cjk8ssea",
-      "originalUrl": "https://wellcomecollection.org/works/cjk8ssea"
+      "originalUrl": "https://wellcomecollection.org/works/cjk8ssea",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "pdf",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "diary",
-        "CC BY"
+        "diary"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1046,16 +1260,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). PDF opens from Wellcome; backup copy on OneDrive (Large scans folder).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b19533081",
-      "originalUrl": "https://wellcomecollection.org/works/ctjrt98v"
+      "originalUrl": "https://wellcomecollection.org/works/ctjrt98v",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "pdf",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "diary",
-        "CC BY"
+        "diary"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1067,16 +1280,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). PDF opens from Wellcome; backup copy on OneDrive (Large scans folder).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18275394",
-      "originalUrl": "https://wellcomecollection.org/works/d54znckw"
+      "originalUrl": "https://wellcomecollection.org/works/d54znckw",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "pdf",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "diary",
-        "CC BY"
+        "diary"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1088,16 +1300,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). PDF opens from Wellcome; backup copy on OneDrive (Large scans folder).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18346522",
-      "originalUrl": "https://wellcomecollection.org/works/de5t4fa2"
+      "originalUrl": "https://wellcomecollection.org/works/de5t4fa2",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "pdf",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "notebook",
-        "CC BY"
+        "notebook"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1109,16 +1320,18 @@
       "note": "Digitised Wellcome manuscript (CC BY). PDF opens from Wellcome; backup copy on OneDrive (Large scans folder).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18385199",
-      "originalUrl": "https://wellcomecollection.org/works/fq6kd9qk"
+      "originalUrl": "https://wellcomecollection.org/works/fq6kd9qk",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "web",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
         "notebook",
-        "CC BY"
+        "Vagbhata",
+        "Ashtanga Hridaya",
+        "translation"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1130,16 +1343,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). Behind Wellcome's 'accept terms' screen because it may contain personal information; PDF downloaded with approval and kept on OneDrive (Large scans folder, private). The button opens the Wellcome page, where you accept the terms to view it.",
       "status": "Wellcome viewer (terms screen) · OneDrive copy",
       "pdfUrl": "https://wellcomecollection.org/works/jgpa6m8n",
-      "originalUrl": "https://wellcomecollection.org/works/jgpa6m8n"
+      "originalUrl": "https://wellcomecollection.org/works/jgpa6m8n",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "pdf",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "diary",
-        "CC BY"
+        "diary"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1151,16 +1363,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). PDF opens from Wellcome; backup copy on OneDrive (Large scans folder).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18518114",
-      "originalUrl": "https://wellcomecollection.org/works/jugkcvkq"
+      "originalUrl": "https://wellcomecollection.org/works/jugkcvkq",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "web",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "diary",
-        "CC BY"
+        "diary"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1172,16 +1383,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). Behind Wellcome's 'accept terms' screen because it may contain personal information; PDF downloaded with approval and kept on OneDrive (Large scans folder, private). The button opens the Wellcome page, where you accept the terms to view it.",
       "status": "Wellcome viewer (terms screen) · OneDrive copy",
       "pdfUrl": "https://wellcomecollection.org/works/kd42qfex",
-      "originalUrl": "https://wellcomecollection.org/works/kd42qfex"
+      "originalUrl": "https://wellcomecollection.org/works/kd42qfex",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "web",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "diary",
-        "CC BY"
+        "diary"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1193,16 +1403,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). Behind Wellcome's 'accept terms' screen because it may contain personal information; PDF downloaded with approval and kept on OneDrive (Large scans folder, private). The button opens the Wellcome page, where you accept the terms to view it.",
       "status": "Wellcome viewer (terms screen) · OneDrive copy",
       "pdfUrl": "https://wellcomecollection.org/works/m4t7zqcm",
-      "originalUrl": "https://wellcomecollection.org/works/m4t7zqcm"
+      "originalUrl": "https://wellcomecollection.org/works/m4t7zqcm",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "pdf",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "diary",
-        "CC BY"
+        "diary"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1214,16 +1423,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). PDF opens from Wellcome; backup copy on OneDrive (Large scans folder).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18309288",
-      "originalUrl": "https://wellcomecollection.org/works/mnb2gpz2"
+      "originalUrl": "https://wellcomecollection.org/works/mnb2gpz2",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "pdf",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "diary",
-        "CC BY"
+        "diary"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1235,16 +1443,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). PDF opens from Wellcome; kept on the bot box only for now (file is over 100 MB, too big for automatic OneDrive upload).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18419793",
-      "originalUrl": "https://wellcomecollection.org/works/mxzxanak"
+      "originalUrl": "https://wellcomecollection.org/works/mxzxanak",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "web",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "diary",
-        "CC BY"
+        "diary"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1256,16 +1463,18 @@
       "note": "Digitised Wellcome manuscript (CC BY). Behind Wellcome's 'accept terms' screen because it may contain personal information; PDF downloaded with approval and kept on OneDrive (Large scans folder, private). The button opens the Wellcome page, where you accept the terms to view it.",
       "status": "Wellcome viewer (terms screen) · OneDrive copy",
       "pdfUrl": "https://wellcomecollection.org/works/ndsyp5rq",
-      "originalUrl": "https://wellcomecollection.org/works/ndsyp5rq"
+      "originalUrl": "https://wellcomecollection.org/works/ndsyp5rq",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "web",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
         "notebook",
-        "CC BY"
+        "Vagbhata",
+        "Ashtanga Hridaya",
+        "translation"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1277,16 +1486,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). Behind Wellcome's 'accept terms' screen because it may contain personal information; PDF downloaded with approval and kept on OneDrive (Large scans folder, private). The button opens the Wellcome page, where you accept the terms to view it.",
       "status": "Wellcome viewer (terms screen) · OneDrive copy",
       "pdfUrl": "https://wellcomecollection.org/works/ngee232d",
-      "originalUrl": "https://wellcomecollection.org/works/ngee232d"
+      "originalUrl": "https://wellcomecollection.org/works/ngee232d",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "web",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "notebook",
-        "CC BY"
+        "notebook"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1298,16 +1506,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). Behind Wellcome's 'accept terms' screen because it may contain personal information; PDF downloaded with approval and kept on OneDrive (Large scans folder, private). The button opens the Wellcome page, where you accept the terms to view it.",
       "status": "Wellcome viewer (terms screen) · OneDrive copy",
       "pdfUrl": "https://wellcomecollection.org/works/paa683gn",
-      "originalUrl": "https://wellcomecollection.org/works/paa683gn"
+      "originalUrl": "https://wellcomecollection.org/works/paa683gn",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "pdf",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "diary",
-        "CC BY"
+        "diary"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1319,16 +1526,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). PDF opens from Wellcome; backup copy on OneDrive (Large scans folder).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18525234",
-      "originalUrl": "https://wellcomecollection.org/works/pxq5g2e3"
+      "originalUrl": "https://wellcomecollection.org/works/pxq5g2e3",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "pdf",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "diary",
-        "CC BY"
+        "diary"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1340,16 +1546,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). PDF opens from Wellcome; backup copy on OneDrive (Large scans folder).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18359528",
-      "originalUrl": "https://wellcomecollection.org/works/qky6dvan"
+      "originalUrl": "https://wellcomecollection.org/works/qky6dvan",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "pdf",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "diary",
-        "CC BY"
+        "diary"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1361,16 +1566,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). PDF opens from Wellcome; backup copy on OneDrive (Large scans folder).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18344227",
-      "originalUrl": "https://wellcomecollection.org/works/rdgksacs"
+      "originalUrl": "https://wellcomecollection.org/works/rdgksacs",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "web",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "notebook",
-        "CC BY"
+        "notebook"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1382,16 +1586,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). Behind Wellcome's 'accept terms' screen because it may contain personal information; PDF downloaded with approval and kept on OneDrive (Large scans folder, private). The button opens the Wellcome page, where you accept the terms to view it.",
       "status": "Wellcome viewer (terms screen) · OneDrive copy",
       "pdfUrl": "https://wellcomecollection.org/works/rquxgtt4",
-      "originalUrl": "https://wellcomecollection.org/works/rquxgtt4"
+      "originalUrl": "https://wellcomecollection.org/works/rquxgtt4",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "web",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "account book",
-        "CC BY"
+        "account book"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1403,16 +1606,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). Behind Wellcome's 'accept terms' screen because it may contain personal information; PDF downloaded with approval and kept on OneDrive (Large scans folder, private). The button opens the Wellcome page, where you accept the terms to view it.",
       "status": "Wellcome viewer (terms screen) · OneDrive copy",
       "pdfUrl": "https://wellcomecollection.org/works/ruu2ucsn",
-      "originalUrl": "https://wellcomecollection.org/works/ruu2ucsn"
+      "originalUrl": "https://wellcomecollection.org/works/ruu2ucsn",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "web",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "notebook",
-        "CC BY"
+        "notebook"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1424,16 +1626,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). Behind Wellcome's 'accept terms' screen because it may contain personal information; PDF downloaded with approval and kept on OneDrive (Large scans folder, private). The button opens the Wellcome page, where you accept the terms to view it.",
       "status": "Wellcome viewer (terms screen) · OneDrive copy",
       "pdfUrl": "https://wellcomecollection.org/works/t357vtw6",
-      "originalUrl": "https://wellcomecollection.org/works/t357vtw6"
+      "originalUrl": "https://wellcomecollection.org/works/t357vtw6",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "web",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "diary",
-        "CC BY"
+        "diary"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1445,16 +1646,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). Behind Wellcome's 'accept terms' screen because it may contain personal information; PDF downloaded with approval and kept on OneDrive (Large scans folder, private). The button opens the Wellcome page, where you accept the terms to view it.",
       "status": "Wellcome viewer (terms screen) · OneDrive copy",
       "pdfUrl": "https://wellcomecollection.org/works/tb9j55vd",
-      "originalUrl": "https://wellcomecollection.org/works/tb9j55vd"
+      "originalUrl": "https://wellcomecollection.org/works/tb9j55vd",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "web",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "notebook",
-        "CC BY"
+        "notebook"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1466,16 +1666,18 @@
       "note": "Digitised Wellcome manuscript (CC BY). Behind Wellcome's 'accept terms' screen because it may contain personal information; PDF downloaded with approval and kept on OneDrive (Large scans folder, private). The button opens the Wellcome page, where you accept the terms to view it.",
       "status": "Wellcome viewer (terms screen) · OneDrive copy",
       "pdfUrl": "https://wellcomecollection.org/works/u8a2jf3z",
-      "originalUrl": "https://wellcomecollection.org/works/u8a2jf3z"
+      "originalUrl": "https://wellcomecollection.org/works/u8a2jf3z",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "web",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
         "notebook",
-        "CC BY"
+        "Vagbhata",
+        "Ashtanga Hridaya",
+        "translation"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1487,16 +1689,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). Behind Wellcome's 'accept terms' screen because it may contain personal information; PDF downloaded with approval and kept on OneDrive (Large scans folder, private). The button opens the Wellcome page, where you accept the terms to view it.",
       "status": "Wellcome viewer (terms screen) · OneDrive copy",
       "pdfUrl": "https://wellcomecollection.org/works/v9j4m4an",
-      "originalUrl": "https://wellcomecollection.org/works/v9j4m4an"
+      "originalUrl": "https://wellcomecollection.org/works/v9j4m4an",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "web",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "diary",
-        "CC BY"
+        "diary"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1508,16 +1709,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). Behind Wellcome's 'accept terms' screen because it may contain personal information; PDF downloaded with approval and kept on OneDrive (Large scans folder, private). The button opens the Wellcome page, where you accept the terms to view it.",
       "status": "Wellcome viewer (terms screen) · OneDrive copy",
       "pdfUrl": "https://wellcomecollection.org/works/ved462q6",
-      "originalUrl": "https://wellcomecollection.org/works/ved462q6"
+      "originalUrl": "https://wellcomecollection.org/works/ved462q6",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "web",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "notebook",
-        "CC BY"
+        "notebook"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1529,16 +1729,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). Behind Wellcome's 'accept terms' screen because it may contain personal information; PDF downloaded with approval and kept on OneDrive (Large scans folder, private). The button opens the Wellcome page, where you accept the terms to view it.",
       "status": "Wellcome viewer (terms screen) · OneDrive copy",
       "pdfUrl": "https://wellcomecollection.org/works/wgyur3ne",
-      "originalUrl": "https://wellcomecollection.org/works/wgyur3ne"
+      "originalUrl": "https://wellcomecollection.org/works/wgyur3ne",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "pdf",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "diary",
-        "CC BY"
+        "diary"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1550,16 +1749,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). PDF opens from Wellcome; backup copy on OneDrive (Large scans folder).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b1929749x",
-      "originalUrl": "https://wellcomecollection.org/works/wvu6prnm"
+      "originalUrl": "https://wellcomecollection.org/works/wvu6prnm",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "pdf",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "diary",
-        "CC BY"
+        "diary"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1571,16 +1769,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). PDF opens from Wellcome; backup copy on OneDrive (Large scans folder).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18258165",
-      "originalUrl": "https://wellcomecollection.org/works/xvhax6gd"
+      "originalUrl": "https://wellcomecollection.org/works/xvhax6gd",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "web",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "account book",
-        "CC BY"
+        "account book"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1592,16 +1789,15 @@
       "note": "Digitised Wellcome manuscript (CC BY). Behind Wellcome's 'accept terms' screen because it may contain personal information; PDF downloaded with approval and kept on OneDrive (Large scans folder, private). The button opens the Wellcome page, where you accept the terms to view it.",
       "status": "Wellcome viewer (terms screen) · OneDrive copy",
       "pdfUrl": "https://wellcomecollection.org/works/yh89jads",
-      "originalUrl": "https://wellcomecollection.org/works/yh89jads"
+      "originalUrl": "https://wellcomecollection.org/works/yh89jads",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "pdf",
       "tags": [
         "Paira Mall",
-        "Wellcome",
-        "WA/HMM/CM/Pai",
-        "notebook",
-        "CC BY"
+        "notebook"
       ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
@@ -1613,11 +1809,18 @@
       "note": "Digitised Wellcome manuscript (CC BY). PDF opens from Wellcome; backup copy on OneDrive (Large scans folder).",
       "status": "Wellcome PDF",
       "pdfUrl": "https://iiif.wellcomecollection.org/pdf/b18322840",
-      "originalUrl": "https://wellcomecollection.org/works/zggv87ad"
+      "originalUrl": "https://wellcomecollection.org/works/zggv87ad",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "web",
-      "tags": [],
+      "tags": [
+        "Jardin de Lorixa",
+        "Nicolas L'Empereur",
+        "Odisha",
+        "botanical illustration"
+      ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
       "id": "google-arts-jardin-de-lorixa",
@@ -1628,11 +1831,17 @@
       "note": "Image page; could not be captured as PDF (JavaScript viewer).",
       "status": "Web link",
       "pdfUrl": "https://artsandculture.google.com/asset/frontispiece-jardin-de-lorixa-manuscript/fQG-6ANW5U5sSQ?hl=en",
-      "originalUrl": "https://artsandculture.google.com/asset/frontispiece-jardin-de-lorixa-manuscript/fQG-6ANW5U5sSQ?hl=en"
+      "originalUrl": "https://artsandculture.google.com/asset/frontispiece-jardin-de-lorixa-manuscript/fQG-6ANW5U5sSQ?hl=en",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     },
     {
       "type": "web",
-      "tags": [],
+      "tags": [
+        "reserpine",
+        "Rauwolfia",
+        "hypertension"
+      ],
       "waybackUrl": null,
       "topicId": "indian-medical-knowledge",
       "id": "pubmed-2007-reserpine",
@@ -1643,7 +1852,9 @@
       "note": "PubMed abstract only (Czech article); PubMed blocks automatic capture.",
       "status": "Web link",
       "pdfUrl": "https://pubmed.ncbi.nlm.nih.gov/17722843/",
-      "originalUrl": "https://pubmed.ncbi.nlm.nih.gov/17722843/"
+      "originalUrl": "https://pubmed.ncbi.nlm.nih.gov/17722843/",
+      "onedriveShareUrl": null,
+      "onedrivePath": null
     }
   ]
 }

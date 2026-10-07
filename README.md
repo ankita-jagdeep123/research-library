@@ -42,6 +42,8 @@ Repo: https://github.com/ankita-jagdeep123/digestion-research-library
 
 Details: [`docs/ADD-SOURCE.md`](docs/ADD-SOURCE.md).
 
+> **One-time setup:** the ingest Action YAML could not be pushed with the initial OAuth token (missing `workflow` scope). Enable it by copying `docs/ingest-source.workflow.yml` → `.github/workflows/ingest-source.yml` after `gh auth refresh -s workflow` — see [`docs/ENABLE-INGEST-WORKFLOW.md`](docs/ENABLE-INGEST-WORKFLOW.md). Until then, the Issue form and `library.json` still work; you can edit `library.json` manually or use the form and merge by hand.
+
 **pdfUrl tip:** Private OneDrive PDFs stay as **Anyone with the link → Can view** links. Do not commit secrets or private binary dumps you are not allowed to publish. Sample PDFs under `PDFs/` remain in the repo so demo **Open PDF** works.
 
 ## Why OneDrive folders + this UI (not Airtable)

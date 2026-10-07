@@ -25,6 +25,10 @@ https://github.com/ankita-jagdeep123/digestion-research-library/issues/new?templ
 | Demo sample already in the repo | Relative path like `PDFs/example.pdf` |
 | Private OneDrive PDF | OneDrive **Anyone with the link → Can view** link — do **not** upload private files or secrets into this public repo |
 
+## Enable auto-ingest (one-time)
+
+If submitting the form does not update `library.json` automatically, the Action YAML is not on `main` yet (OAuth `workflow` scope). Follow [`ENABLE-INGEST-WORKFLOW.md`](ENABLE-INGEST-WORKFLOW.md). Until then, edit `library.json` manually or paste the form values by hand.
+
 ## Manual edit (fallback)
 
 If the Action fails, edit `library.json` by hand (see root `HOW-TO.md`) and push to `main`. The embedded fallback inside `index.html` is only for offline/`file://`; the live Pages site always loads `library.json`.
